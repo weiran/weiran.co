@@ -32,7 +32,7 @@ class BlogPostTemplate extends React.Component {
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <Link to={post.slug}>
-          #
+          ⌘
         </Link>
         <hr
           style={{
