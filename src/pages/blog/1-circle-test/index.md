@@ -13,7 +13,7 @@ So for this year, in an effort to do something with my life, I will try to relea
 
 My first unimaginatively named game is Circle Test. This started out as an idea for a tvOS game before I realised that almost no one I know has an Apple TV that can run it. The first challenge probably should be something I can get some feedback on otherwise I'm just making crap for myself here.
 
-\[caption id="" align="alignnone" width="322.0"\][![  The app icon was graciously made by  Paul Wallas  ](276f6e57-648b-451b-8399-a2fdf7f620b5.jpeg)](https://appsto.re/gb/Bt_iab.i) The app icon was graciously made by Paul Wallas \[/caption\]
+\[caption id="" align="alignnone" width="322.0"\][![  The app icon was graciously made by  Paul Wallas  ](f4e55c47-e930-4912-8649-a4e2b4cab000.jpeg)](https://appsto.re/gb/Bt_iab.i) The app icon was graciously made by Paul Wallas \[/caption\]
 
 The goal is simple, see how good your hand to eye coordination is by mashing your iOS device when the red semicircle is colliding with the purple semicircle. Through some non-scientific testing I did which has yielded statistically irrelevant data:
 

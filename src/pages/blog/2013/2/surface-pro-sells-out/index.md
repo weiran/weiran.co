@@ -1,5 +1,5 @@
 ---
-title: "Surface Pro "sells out""
+title: "Surface Pro \"sells out\""
 date: "2013-02-09T22:39:17.000Z"
 passthroughUrl: http://virtualpants.com/post/42690590612/surface-pro-sells-out
 ---

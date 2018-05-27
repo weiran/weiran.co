@@ -7,7 +7,7 @@ Lots of people were worried when the [new-old Mac Pro](http://www.marco.org/2012
 
 They couldn't have been more wrong.
 
-![](945f801c-0e79-4eb3-b940-f1ec1bab9e9e.jpg)
+![](5831db24-4b58-437f-b637-dd97071f9817.jpg)
 
 > We didn't want to just make another version of the same old desktop idea that everyone's had. Like with MacBook Air, our engineering team has spent quite a bit of time thinking about the technology available today and what could be possible for the future of the pro desktop, what would be a new form factor, new design, **new capabilities for another ten years**.
 

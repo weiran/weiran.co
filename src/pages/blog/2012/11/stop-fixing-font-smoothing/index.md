@@ -1,5 +1,5 @@
 ---
-title: "Stop "fixing" font smoothing"
+title: "Stop \"fixing\" font smoothing"
 date: "2012-11-15T08:59:29.000Z"
 passthroughUrl: http://www.usabilitypost.com/2012/11/05/stop-fixing-font-smoothing/
 ---

@@ -1,5 +1,5 @@
 ---
-title: "What would a 5" iPhone look like?"
+title: "What would a 5\" iPhone look like?"
 date: "2013-02-01T09:50:09.000Z"
 passthroughUrl: http://www.marco.org/2013/01/31/iphone-plus-speculation
 ---
