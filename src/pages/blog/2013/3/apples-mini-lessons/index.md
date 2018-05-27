@@ -3,7 +3,7 @@ title: "Apple's mini lessons"
 date: "2013-03-05T14:54:58.000Z"
 ---
 
-![](c1ed2469-80ff-40a3-98f1-4ec62c4809ef.png)
+![](57fc3ad8-c937-42e5-ba64-f7149f03d031.png)
 
 Since the iPhone 3G, Apple has recycled old iPhone models to be the low end model. As Apple produces more of each model, it's profit margin increases to the point where the price can be reduced. This has worked very well, with [the iPhone 4 supply constrained in the entirety of Q4 2012](http://seekingalpha.com/article/1130391-apple-disappointed-in-part-due-to-supply-constraints) despite being two-years old, some people want an iPhone while paying as little as possible.
 

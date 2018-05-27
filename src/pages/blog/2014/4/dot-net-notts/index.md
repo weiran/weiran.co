@@ -8,7 +8,7 @@ Marvin Rounce and I are thrilled to announce [dot net notts](http://dotnetnotts.
 
 We hoping to build a first-class community of .NET developers from across the East Midlands, and we have an incredibly lineup of speakers and generous sponsors.
 
-![](1a021d3a-2f95-48c8-b6ae-deda3c0773e3.png)
+![](a68b7c73-2a3e-4767-b9ae-eee01b1d78ee.png)
 
 Our first event is on April 28 and features [Richard Conway](http://www.meetup.com/dotnetnotts/events/171577802/) talking about Microsoft Azure.
 

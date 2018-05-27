@@ -7,4 +7,4 @@ Apple's [new budget iPod Touch](http://www.loopinsight.com/2013/05/30/apple-intr
 
 It's no coincidence that the resemblance is uncanny:
 
-![](934df08f-bb90-43d3-8382-9e0644de6eeb.jpg)
+![](bef0112a-d260-4d76-98e3-f7cbfde1b6d0.jpg)

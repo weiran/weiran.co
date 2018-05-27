@@ -9,7 +9,7 @@ iMacs have used mobile graphics cards (GPUs) since 2011, when desktop GPUs start
 
 AMD make fine graphics cards, but in recent years Nvidia had the edge in terms of performance, heat, and power usage. The current top of the range AMD graphics card in the iMac, the Radeon R9 M395X, just doesn't compare well to Nvidia's 970M, even though on the spec sheet the AMD card should be faster. But in comparison the AMD card is slower, more power hungry, and thermally throttles when pushed.
 
-![](a867d3b0-1d8d-4d2d-831a-1b4b7c86c5d8.jpg)
+![](35accf27-eab1-4825-8ebb-039f49a036d4.jpg)
 
 ## AMD Polaris
 

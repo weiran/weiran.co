@@ -7,7 +7,7 @@ Today I released my new iPhone app, [Hackers](http://weiranzhang.com/hackers), w
 
 Hackers is an iPhone app designed for reading Hacker News on the go. I took a content first approach to the design which has resulted in a minimalist style. It takes some getting used to, especially not having separators between table cells, but with distinctive headers I didn't feel it was necessary.
 
-![](a53c871f-3e35-4aaf-83e2-1c1ec8542cba.png)
+![](42f8f83f-86d2-4d9d-aba8-a81463d514f9.png)
 
 Hackers focuses on the most common way of reading Hacker News on an iPhone, during travelling or while waiting in queues. You may not have time to read a whole article and all the comments, but you have enough to skim the top posts and their top comments.
 
@@ -17,7 +17,7 @@ I've released Hackers as an [open source project on GitHub](https://github.com/w
 
 If you prefer the convenience of having automatic updates, you can buy Hackers on the App Store for £1.49 ($1.99):
 
-[![](a4520d57-ab05-4360-8007-0f0c3813e512.png)](https://itunes.apple.com/us/app/hackers-hacker-news-reading/id603503901)
+[![](fb06f0ab-df00-4f27-baed-9c72271ca1fa.png)](https://itunes.apple.com/us/app/hackers-hacker-news-reading/id603503901)
 
 Hopefully people can learn from my mistakes and particular ways I've implemented features. At the least it's an entry into the crazy world of AutoLayout with Storyboards.
 

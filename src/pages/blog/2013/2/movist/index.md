@@ -3,7 +3,7 @@ title: "Movist"
 date: "2013-02-21T13:27:50.000Z"
 ---
 
-![](1e9051ca-4852-44de-ae4c-ce04601a0dd5.png)
+![](f5c06492-d1c6-415b-b7fe-0b97e5b8e6b1.png)
 
 Movist has long been one of my favourite video players for the Mac. The simplicity of it's interface and it's speed has kept me from using [VLC](http://www.videolan.org) or [MPlayerX](http://mplayerx.org). I simply perfer the way Movist 'feels'.
 

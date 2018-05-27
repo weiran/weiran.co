@@ -9,7 +9,7 @@ I had some time off over Christmas, so I decided to scratch an itch I’ve had f
 
 I dabbled with the Instapaper API [in the past](https://github.com/weiran/Metropaper), and had the classical programmer thought process of “how hard can it be”.
 
-\[caption id="" align="alignnone" width="1000.0"\][![ The lovely app icon was made by Paul Wallas. ](10f063bd-65f8-47de-9e23-70a911d3d060.png)](/watch-it-later) The lovely app icon was made by Paul Wallas. \[/caption\]
+[![ The lovely app icon was made by Paul Wallas. ](ff43a7f0-c0df-4559-8757-e8c2c8e27016.png)](/watch-it-later)
 
 So I built [Watch It Later](https://itunes.apple.com/us/app/watch-it-later/id1191095941?ls=1&mt=8&at=11l4G8&ct=weiran.co) in a day, an Apple TV app that lets you play your saved Instapaper videos. It supports YouTube and Vimeo, and can playback with the native Apple TV video player.
 

@@ -9,7 +9,7 @@ I've never really used cases, much to the detriment of the exterior of my iPhone
 
 However there are situations where I wouldn't be comfortable using my iPhone without a case, and travelling to the Arctic Circle is one of them. When Snugg offered me the case to review, Finland seemed like the ideal place to try it.
 
-![](d8c78455-a849-49ee-9374-aca06aa1cd53.jpg)
+![](896babf4-1cc2-4730-adce-e608da6ed990.jpg)
 
 The first thing you notice is the weight, or the lack of it. I find it hard to tell if the case is on purely by weight alone. But, you will certainly notice the bulk. It makes the iPhone feel twice as thick as it normally does, which makes it more comfortable to hold, especially with gloves on. Personally I don't like how bulky the case is, but those with bigger hands might prefer it.
 
