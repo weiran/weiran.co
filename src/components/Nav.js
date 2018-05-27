@@ -33,8 +33,8 @@ class Nav extends React.Component {
         marginBottom: rhythm(2)
       }}>
         <ul>
-          {this.state.pages.map(page => 
-            <li style={{
+          {this.state.pages.map((page, index) => 
+            <li key={index} style={{
               display: "inline",
               margin: "0 " + rhythm(1.5)
             }}>
