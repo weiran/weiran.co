@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
 import Nav from '../components/Nav'
+import Title from '../components/Title'
 import Bio from '../components/Bio'
 import { rhythm } from '../utils/typography'
 
@@ -21,17 +22,22 @@ class Index extends React.Component {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                  {title}
-                </Link>
+              <h3 style={{
+                marginBottom: 0
+              }}>
+                <Title title={node.frontmatter.title} passthroughUrl={node.frontmatter.passthroughUrl} slug={node.fields.slug} />
               </h3>
               <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              <div style={{
+                marginBottom: rhythm(2)
+              }}>
+                <p dangerouslySetInnerHTML={{ __html: node.excerpt }} style={{
+                  marginBottom: rhythm(0)
+                }} />
+                <Link to={node.fields.slug}>
+                  ⌘
+                </Link>
+              </div>
             </div>
           )
         })}
@@ -60,6 +66,7 @@ export const pageQuery = graphql`
             date(formatString: "DD MMMM, YYYY")
             title
             type
+            passthroughUrl
           }
         }
       }

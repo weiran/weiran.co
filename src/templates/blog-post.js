@@ -19,7 +19,9 @@ class BlogPostTemplate extends React.Component {
       <div>
         <Nav />
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        <Title title={post.frontmatter.title} passthroughUrl={post.frontmatter.passthroughUrl} />
+        <h1>
+          <Title title={post.frontmatter.title} passthroughUrl={post.frontmatter.passthroughUrl} slug={post.slug} />
+        </h1>
         <p
           style={{
             ...scale(-1 / 5),
