@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import Nav from '../components/Nav'
 import Title from '../components/Title'
 import Bio from '../components/Bio'
-import { rhythm } from '../utils/typography'
+import { rhythm, scale } from '../utils/typography'
 
 class Index extends React.Component {
   render() {
@@ -18,21 +18,26 @@ class Index extends React.Component {
         <Nav />
         <Helmet title={siteTitle} />
         <Bio />
-        {posts.map(({ node }) => {
+        {posts.map(({ node }, index) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug}>
               <h3 style={{
-                marginBottom: 0
+                marginBottom: rhythm(0.25),
+                fontSize: node.frontmatter.passthroughUrl ? '1.21225rem' : '1.618rem',
               }}>
                 <Title title={node.frontmatter.title} passthroughUrl={node.frontmatter.passthroughUrl} slug={node.fields.slug} />
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <p style={{
+                ...scale(-1 / 5),
+                marginBottom: node.frontmatter.passthroughUrl ? rhythm(0) : rhythm(0.75),
+                display: 'block',
+              }}>{node.frontmatter.date}</p>
               <div style={{
                 marginBottom: rhythm(2)
               }}>
-                <p dangerouslySetInnerHTML={{ __html: node.excerpt }} style={{
-                  marginBottom: rhythm(0)
+                <p dangerouslySetInnerHTML={{ __html: index > 1 ? node.excerpt : node.html }} style={{
+                  marginBottom: rhythm(0.5)
                 }} />
                 <Link to={node.fields.slug}>
                   ⌘
@@ -59,6 +64,7 @@ export const pageQuery = graphql`
       edges {
         node {
           excerpt
+          html
           fields {
             slug
           }
