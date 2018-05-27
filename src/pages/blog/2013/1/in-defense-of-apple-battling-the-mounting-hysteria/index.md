@@ -1,0 +1,7 @@
+---
+title: In defense of Apple: battling the mounting hysteria
+date: "2013-01-25T13:11:36.000Z"
+
+---
+
+> The hysteria surrounding Apple's business performance and its market positioning has led to perceptions about the state of Apple becoming unhinged from reality. Apple's calendar year 2012 profits were the highest of any company in history, and its Q1 2013 earnings were the 4th largest quarterly profit of any company in history, behind only oil and gas companies Exxon Mobil, Royal Dutch Shell and Gazprom. Apple's results for this quarter should be viewed on a weekly basis due to an extra week in Q1 2012, and on that basis, the company posted solid growth across many of its divisions. While Apple's Q2 2013 guidance seems light, it needs to be viewed in the context of last year's iPhone 4S launch and the presence of the iPad mini. And Apple's aggressive operating expense and capital expenditure forecasts are implying that the company is readying for a material change in the second half of fiscal 2013, something that we believe is tied to the launch of a new product category, something that Apple has done every 3 years since 2001. We continue to believe that Apple's best days are ahead of it, and think that this post-earnings selloff should be seen as a buying opportunity. In our view, investors who add to or initiate positions in Apple will be rewarded in the second half of 2013. Innovation is alive and well at Apple, and that innovation is likely to be put on full display in the second half of the year.
