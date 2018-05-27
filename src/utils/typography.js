@@ -3,6 +3,12 @@ import noriegaTheme from 'typography-theme-noriega'
 
 delete noriegaTheme.googleFonts
 
+noriegaTheme.overrideThemeStyles = ({ rhythm }, options) => ({
+  'a': {
+    color: "black"
+  }
+})
+
 const typography = new Typography(noriegaTheme)
 
 // Hot reload typography in development.
