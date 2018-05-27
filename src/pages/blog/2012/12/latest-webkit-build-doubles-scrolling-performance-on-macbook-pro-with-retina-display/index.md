@@ -1,5 +1,5 @@
 ---
-title: Latest WebKit build doubles scrolling performance on MacBook Pro with Retina Display
+title: "Latest WebKit build doubles scrolling performance on MacBook Pro with Retina Display"
 date: "2012-12-04T16:53:30.000Z"
 passthroughUrl: http://www.anandtech.com/show/6495/latest-webkit-build-doubles-scrolling-performance-on-macbook-pro-with-retina-display
 ---

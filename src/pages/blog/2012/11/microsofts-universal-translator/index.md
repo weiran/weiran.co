@@ -1,5 +1,5 @@
 ---
-title: Microsoft's Universal Translator
+title: "Microsoft's Universal Translator"
 date: "2012-11-08T22:19:01.000Z"
 passthroughUrl: http://thenextweb.com/microsoft/2012/11/08/microsoft-demos-amazing-english-to-mandarin-translation-allowing-for-real-time-audible-translations/?fromcat=all
 ---

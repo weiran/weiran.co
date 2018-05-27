@@ -1,7 +1,6 @@
 ---
-title: ReadWriteWeb on the MacBook Pro Retina Display
+title: "ReadWriteWeb on the MacBook Pro Retina Display"
 date: "2012-07-15T10:21:38.000Z"
-
 ---
 
 I wouldn't normally link to a [link-bait article such as this](http://www.readwriteweb.com/archives/apples-brilliant-boondoggle-macbook-pro-retina-display.php), but the comment from another staff writer at ReadWriteWeb is quite revealing:

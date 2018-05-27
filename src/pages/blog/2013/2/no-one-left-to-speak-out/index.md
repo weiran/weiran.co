@@ -1,7 +1,6 @@
 ---
-title: No one left to speak out
+title: "No one left to speak out"
 date: "2013-02-28T12:19:52.000Z"
-
 ---
 
 The UK High Court has [ordered UK ISPs to block more torrent sites](http://www.bbc.co.uk/news/technology-21601609) at the whim of the BPI, a private company representing the interests of music labels, despite data showing that blocking these sites have little effect on copyright infringement.

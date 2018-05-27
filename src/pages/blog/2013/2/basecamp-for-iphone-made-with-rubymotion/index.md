@@ -1,5 +1,5 @@
 ---
-title: Basecamp for iPhone made with RubyMotion
+title: "Basecamp for iPhone made with RubyMotion"
 date: "2013-02-14T10:06:18.000Z"
 passthroughUrl: http://37signals.com/svn/posts/3432-why-i-loved-building-basecamp-for-iphone-in-rubymotion
 ---

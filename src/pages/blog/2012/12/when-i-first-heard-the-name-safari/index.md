@@ -1,5 +1,5 @@
 ---
-title: When I first heard the name “Safari”
+title: "When I first heard the name “Safari”"
 date: "2012-12-20T11:13:55.000Z"
 passthroughUrl: http://donmelton.com/2012/12/19/when-i-first-heard-the-name-safari/
 ---

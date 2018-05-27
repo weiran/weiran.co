@@ -1,5 +1,5 @@
 ---
-title: iPhone 5 vs Galaxy S III Display Technology Shoot-Out
+title: "iPhone 5 vs Galaxy S III Display Technology Shoot-Out"
 date: "2012-09-25T07:49:04.000Z"
 passthroughUrl: http://www.displaymate.com/Smartphone_ShootOut_2.htm
 ---

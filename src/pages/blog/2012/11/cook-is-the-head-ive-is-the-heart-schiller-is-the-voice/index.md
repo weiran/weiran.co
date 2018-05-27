@@ -1,5 +1,5 @@
 ---
-title: Cook is the head, Ive is the heart, Schiller is the voice
+title: "Cook is the head, Ive is the heart, Schiller is the voice"
 date: "2012-11-01T12:36:13.000Z"
 passthroughUrl: http://more-real.com/blog/2012/10/31/the-all-new-apple-the-head-the-heart-and-the-voice
 ---

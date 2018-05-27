@@ -1,5 +1,5 @@
 ---
-title: Andy Rubin steps down as Head of Android
+title: "Andy Rubin steps down as Head of Android"
 date: "2013-03-13T19:10:58.000Z"
 passthroughUrl: http://googleblog.blogspot.co.uk/2013/03/update-from-ceo.html
 ---

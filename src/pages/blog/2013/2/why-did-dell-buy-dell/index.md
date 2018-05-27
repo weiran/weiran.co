@@ -1,5 +1,5 @@
 ---
-title: Why did Dell buy Dell
+title: "Why did Dell buy Dell"
 date: "2013-02-06T14:31:46.000Z"
 passthroughUrl: http://gigaom.com/2013/02/05/welcome-back-michael-dell-its-time-to-reclaim-your-name/
 ---

@@ -1,5 +1,5 @@
 ---
-title: CNET can't be trusted
+title: "CNET can't be trusted"
 date: "2013-01-11T09:11:14.000Z"
 passthroughUrl: http://www.theverge.com/2013/1/10/3862558/cnet-parent-cbs-bans-coverage
 ---

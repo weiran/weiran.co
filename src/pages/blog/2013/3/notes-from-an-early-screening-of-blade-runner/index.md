@@ -1,5 +1,5 @@
 ---
-title: Notes from an early screening of Blade Runner
+title: "Notes from an early screening of Blade Runner"
 date: "2013-03-15T15:14:12.000Z"
 passthroughUrl: http://i.imgur.com/htBlPKU.jpg
 ---

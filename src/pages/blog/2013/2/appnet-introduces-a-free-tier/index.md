@@ -1,5 +1,5 @@
 ---
-title: App.net introduces a free tier
+title: "App.net introduces a free tier"
 date: "2013-02-25T18:17:05.000Z"
 passthroughUrl: http://blog.app.net/2013/02/25/introducing-a-free-tier/
 ---

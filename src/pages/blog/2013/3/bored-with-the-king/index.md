@@ -1,5 +1,5 @@
 ---
-title: Bored with the king
+title: "Bored with the king"
 date: "2013-03-15T10:18:32.000Z"
 passthroughUrl: http://daringfireball.net/2013/03/ceding_the_crown
 ---

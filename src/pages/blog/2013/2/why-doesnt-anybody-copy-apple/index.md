@@ -1,5 +1,5 @@
 ---
-title: Why doesn’t anybody copy Apple?
+title: "Why doesn’t anybody copy Apple?"
 date: "2013-02-19T12:39:12.000Z"
 passthroughUrl: http://www.asymco.com/2013/02/19/why-doesnt-anybody-copy-apple/
 ---

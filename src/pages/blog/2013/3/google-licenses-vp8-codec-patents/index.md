@@ -1,5 +1,5 @@
 ---
-title: Google licenses VP8 codec patents
+title: "Google licenses VP8 codec patents"
 date: "2013-03-07T20:14:03.000Z"
 passthroughUrl: http://blog.webmproject.org/2013/03/vp8-and-mpeg-la.html
 ---

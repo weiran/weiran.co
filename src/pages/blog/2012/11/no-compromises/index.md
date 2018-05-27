@@ -1,5 +1,5 @@
 ---
-title: No compromises
+title: "No compromises"
 date: "2012-11-14T11:59:14.000Z"
 passthroughUrl: http://parislemon.com/post/35654572810/the-sin-ofsky-s-of-the-father
 ---

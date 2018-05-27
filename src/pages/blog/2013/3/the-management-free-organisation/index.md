@@ -1,5 +1,5 @@
 ---
-title: The management-free organisation
+title: "The management-free organisation"
 date: "2013-03-26T09:19:43.000Z"
 passthroughUrl: http://dilbert.com/blog/entry/the_managementfree_organization/
 ---

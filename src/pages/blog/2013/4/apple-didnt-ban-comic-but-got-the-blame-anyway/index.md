@@ -1,5 +1,5 @@
 ---
-title: Apple didn't ban comic but got the blame anyway
+title: "Apple didn't ban comic but got the blame anyway"
 date: "2013-04-10T19:02:30.000Z"
 passthroughUrl: http://blog.comixology.com/2013/04/10/ceo-on-saga-12-controversy/
 ---

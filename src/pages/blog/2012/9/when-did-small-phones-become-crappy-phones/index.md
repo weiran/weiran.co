@@ -1,5 +1,5 @@
 ---
-title: When Did Small Phones Become Crappy Phones?
+title: "When Did Small Phones Become Crappy Phones?"
 date: "2012-09-20T06:22:58.000Z"
 passthroughUrl: http://gizmodo.com/5944598/when-did-small-phones-become-crappy-phones
 ---

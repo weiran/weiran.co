@@ -1,7 +1,6 @@
 ---
-title: Only Apple and Google are skating to where the puck is going
+title: "Only Apple and Google are skating to where the puck is going"
 date: "2013-02-26T11:55:08.000Z"
-
 ---
 
 Who would've bet that Google would be the first company to release a competitor to Apple's MacBook Pro with Retina display? Certainly not me. For whatever reason, other 'brands' seem reluctant to compete with Apple in this new class of notebook computer. Sony, Asus, and Lenovo all have notebooks at similar prices, but none have a high density display and none have only solid state storage.

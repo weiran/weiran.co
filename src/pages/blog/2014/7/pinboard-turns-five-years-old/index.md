@@ -1,5 +1,5 @@
 ---
-title: Pinboard turns five years old
+title: "Pinboard turns five years old"
 date: "2014-07-11T14:23:19.000Z"
 passthroughUrl: https://blog.pinboard.in/2014/07/pinboard_turns_five/
 ---

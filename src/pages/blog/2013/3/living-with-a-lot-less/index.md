@@ -1,5 +1,5 @@
 ---
-title: Living with a lot less
+title: "Living with a lot less"
 date: "2013-03-13T11:03:09.000Z"
 passthroughUrl: http://www.nytimes.com/2013/03/10/opinion/sunday/living-with-less-a-lot-less.html?_r=1&pagewanted=all&
 ---

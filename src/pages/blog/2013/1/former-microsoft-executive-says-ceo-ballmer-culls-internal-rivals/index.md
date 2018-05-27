@@ -1,5 +1,5 @@
 ---
-title: Former Microsoft executive says CEO Ballmer culls internal rivals
+title: "Former Microsoft executive says CEO Ballmer culls internal rivals"
 date: "2013-01-22T11:16:42.000Z"
 passthroughUrl: http://uk.reuters.com/article/2013/01/22/us-microsoft-book-idUKBRE90L04320130122
 ---

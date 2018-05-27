@@ -1,5 +1,5 @@
 ---
-title: Google's lame excuse for not offering LTE on Nexus 4
+title: "Google's lame excuse for not offering LTE on Nexus 4"
 date: "2012-10-31T11:37:03.000Z"
 passthroughUrl: http://thenextweb.com/google/2012/10/29/googles-lame-duck-explanation-of-why-the-nexus-4-doesnt-have-lte/
 ---

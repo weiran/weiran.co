@@ -1,7 +1,6 @@
 ---
-title: Why Google Needs 'Don't Be Evil'
+title: "Why Google Needs 'Don't Be Evil'"
 date: "2013-06-19T15:45:30.000Z"
-
 ---
 
 "Don't be evil" is synonymous with Google, it's their corporate identity. But have you ever stopped and wondered why? Why does Google need to remind itself that it needs be good, and why it's their slogan?

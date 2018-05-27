@@ -1,7 +1,6 @@
 ---
-title: More Apple Talk
+title: "More Apple Talk"
 date: "2013-04-02T12:56:31.000Z"
-
 ---
 
 Yesterday, Tim Cook did something Steve Jobs hardly ever did, [he apologised](http://9to5mac.com/2013/04/01/apple-ceo-tim-cook-announces-changes-to-warranty-policies-apologizes-to-customers-in-china-following-smear-campaign/).

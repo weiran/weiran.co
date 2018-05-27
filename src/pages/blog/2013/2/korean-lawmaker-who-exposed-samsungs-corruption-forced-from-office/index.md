@@ -1,5 +1,5 @@
 ---
-title: Korean lawmaker who exposed Samsung's corruption forced from office
+title: "Korean lawmaker who exposed Samsung's corruption forced from office"
 date: "2013-02-15T12:59:25.000Z"
 passthroughUrl: http://news.yahoo.com/skorean-lawmaker-loses-seat-over-samsung-wiretaps-090038078--finance.html
 ---

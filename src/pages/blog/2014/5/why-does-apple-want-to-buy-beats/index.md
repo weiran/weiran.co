@@ -1,7 +1,6 @@
 ---
-title: Why does Apple want to buy Beats?
+title: "Why does Apple want to buy Beats?"
 date: "2014-05-09T15:10:18.000Z"
-
 ---
 
 Apple's interest in Beats Electronics got me thinking about their headphones. I know Apple is probably buying Beats for their music streaming rather than their hardware, but one doesn't come with the other and the most iconic product of Beats are their headphones.

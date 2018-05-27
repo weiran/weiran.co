@@ -1,5 +1,5 @@
 ---
-title: LG buys webOS, HP keeps cloud services
+title: "LG buys webOS, HP keeps cloud services"
 date: "2013-02-26T08:23:39.000Z"
 passthroughUrl: http://www.theverge.com/2013/2/25/4027814/hp-emerges-as-big-winner-in-webos-sale
 ---

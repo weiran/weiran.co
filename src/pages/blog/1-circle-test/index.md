@@ -1,7 +1,6 @@
 ---
-title: An App a Month in 2016: 1. Circle Test
+title: "An App a Month in 2016: 1. Circle Test"
 date: "2016-02-07T09:18:33.000Z"
-
 ---
 
 Every year I tell myself I don't do New Years Resolutions, they have a tendency to set one up for failure or have goals that are so benign you wonder why you had to wait for new years to do it.
@@ -14,7 +13,7 @@ So for this year, in an effort to do something with my life, I will try to relea
 
 My first unimaginatively named game is Circle Test. This started out as an idea for a tvOS game before I realised that almost no one I know has an Apple TV that can run it. The first challenge probably should be something I can get some feedback on otherwise I'm just making crap for myself here.
 
-\[caption id="" align="alignnone" width="322.0"\][![  The app icon was graciously made by  Paul Wallas  ](edd4894f-6758-4846-b250-51241326e339.jpeg)](https://appsto.re/gb/Bt_iab.i) The app icon was graciously made by Paul Wallas \[/caption\]
+\[caption id="" align="alignnone" width="322.0"\][![  The app icon was graciously made by  Paul Wallas  ](276f6e57-648b-451b-8399-a2fdf7f620b5.jpeg)](https://appsto.re/gb/Bt_iab.i) The app icon was graciously made by Paul Wallas \[/caption\]
 
 The goal is simple, see how good your hand to eye coordination is by mashing your iOS device when the red semicircle is colliding with the purple semicircle. Through some non-scientific testing I did which has yielded statistically irrelevant data:
 

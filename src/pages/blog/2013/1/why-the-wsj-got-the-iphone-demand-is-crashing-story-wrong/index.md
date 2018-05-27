@@ -1,5 +1,5 @@
 ---
-title: Why the WSJ got the 'iPhone demand is crashing' story wrong
+title: "Why the WSJ got the 'iPhone demand is crashing' story wrong"
 date: "2013-01-16T09:09:20.000Z"
 passthroughUrl: http://www.forbes.com/sites/markrogowsky/2013/01/15/did-the-wsj-get-punkd-on-apple-or-is-it-rotten-to-the-core/
 ---

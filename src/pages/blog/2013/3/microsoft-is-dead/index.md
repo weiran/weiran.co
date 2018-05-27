@@ -1,5 +1,5 @@
 ---
-title: Microsoft is dead
+title: "Microsoft is dead"
 date: "2013-03-15T09:29:16.000Z"
 passthroughUrl: http://www.paulgraham.com/microsoft.html
 ---

@@ -1,5 +1,5 @@
 ---
-title: Google Chromebook Pixel
+title: "Google Chromebook Pixel"
 date: "2013-02-21T19:25:50.000Z"
 passthroughUrl: http://www.google.com/intl/en/chrome/devices/chromebook-pixel/
 ---

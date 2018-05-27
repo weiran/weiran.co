@@ -1,5 +1,5 @@
 ---
-title: BBC: why Android development sucks
+title: "BBC: why Android development sucks"
 date: "2012-12-17T14:54:02.000Z"
 passthroughUrl: http://www.bbc.co.uk/news/technology-20754182
 ---

@@ -1,5 +1,5 @@
 ---
-title: Speculating iPad mini with Retina Display?
+title: "Speculating iPad mini with Retina Display?"
 date: "2012-10-09T14:39:42.000Z"
 passthroughUrl: http://coreymarion.wordpress.com/2012/10/09/ipad-mini-with-retina-display/
 ---

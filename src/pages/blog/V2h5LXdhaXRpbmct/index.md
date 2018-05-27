@@ -1,5 +1,5 @@
 ---
-title: Why waiting in line is torture
+title: "Why waiting in line is torture"
 date: "2012-08-23T22:55:49.000Z"
 passthroughUrl: http://www.nytimes.com/2012/08/19/opinion/sunday/why-waiting-in-line-is-torture.html?_r=1&pagewanted=all
 ---

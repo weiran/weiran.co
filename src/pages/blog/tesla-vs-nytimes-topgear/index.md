@@ -1,7 +1,6 @@
 ---
-title: Tesla vs. NY Times and Top Gear
+title: "Tesla vs. NY Times and Top Gear"
 date: "2013-02-15T14:00:43.000Z"
-
 ---
 
 In a world where companies communicate with corporate PR speak, I applaud Elon Musk's tone in [his response to John Broder's review of the Tesla Model S](http://www.teslamotors.com/blog/most-peculiar-test-drive). It reminds me of [Steve Jobs when he was pissed off](http://www.apple.com/hotnews/thoughts-on-flash/). But while on the surface Musk's arguments seem compelling, digging a bit deeper shows cracks and the same sort of biased analysis and prejudice that resulted in Broder's original conclusions.

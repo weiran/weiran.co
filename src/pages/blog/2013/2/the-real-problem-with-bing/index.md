@@ -1,5 +1,5 @@
 ---
-title: The real problem with Bing
+title: "The real problem with Bing"
 date: "2013-02-19T09:16:42.000Z"
 passthroughUrl: http://www.slate.com/blogs/moneybox/2013/02/15/scroogled_and_mark_penn_the_political_consultant_is_lame_but_he_s_not_bing.html
 ---

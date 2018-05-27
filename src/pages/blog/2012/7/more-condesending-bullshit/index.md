@@ -1,7 +1,6 @@
 ---
-title: More Condesending Bullshit
+title: "More Condesending Bullshit"
 date: "2012-07-16T07:27:31.000Z"
-
 ---
 
 I can't believe ReadWriteWeb let Antone Gonsalves write [a follow-up post](http://www.readwriteweb.com/archives/yes-macbook-pros-retina-display-is-brilliant-but-not-for-the-average-user.php) to [his piece on the MacBook Pro with Retina Display](http://www.weiranzhang.com/2012/7/readwriteweb-on-the-macbook-pro-retina-display).

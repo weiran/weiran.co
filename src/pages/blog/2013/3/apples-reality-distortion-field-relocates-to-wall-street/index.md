@@ -1,5 +1,5 @@
 ---
-title: Apple’s Reality Distortion Field relocates to Wall Street
+title: "Apple’s Reality Distortion Field relocates to Wall Street"
 date: "2013-03-05T10:06:24.000Z"
 passthroughUrl: http://techland.time.com/2013/03/04/apples-reality-distortion-field-relocates-to-wall-street/
 ---

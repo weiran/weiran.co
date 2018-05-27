@@ -1,7 +1,6 @@
 ---
-title: Watch It Later for Apple TV
+title: "Watch It Later for Apple TV"
 date: "2017-02-19T14:47:00.000Z"
-
 ---
 
 I had some time off over Christmas, so I decided to scratch an itch I’ve had for a while now.
@@ -10,7 +9,7 @@ I had some time off over Christmas, so I decided to scratch an itch I’ve had f
 
 I dabbled with the Instapaper API [in the past](https://github.com/weiran/Metropaper), and had the classical programmer thought process of “how hard can it be”.
 
-\[caption id="" align="alignnone" width="1000.0"\][![ The lovely app icon was made by Paul Wallas. ](d9339205-9303-4a06-931e-45df666e5045.png)](/watch-it-later) The lovely app icon was made by Paul Wallas. \[/caption\]
+\[caption id="" align="alignnone" width="1000.0"\][![ The lovely app icon was made by Paul Wallas. ](6dcc6a71-ec80-484a-924f-0505cb7779f5.png)](/watch-it-later) The lovely app icon was made by Paul Wallas. \[/caption\]
 
 So I built [Watch It Later](https://itunes.apple.com/us/app/watch-it-later/id1191095941?ls=1&mt=8&at=11l4G8&ct=weiran.co) in a day, an Apple TV app that lets you play your saved Instapaper videos. It supports YouTube and Vimeo, and can playback with the native Apple TV video player.
 

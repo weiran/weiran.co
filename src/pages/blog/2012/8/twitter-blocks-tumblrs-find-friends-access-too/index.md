@@ -1,5 +1,5 @@
 ---
-title: Twitter blocks Tumblr's "find friends" access too
+title: "Twitter blocks Tumblr's "find friends" access too"
 date: "2012-08-23T09:48:26.000Z"
 passthroughUrl: http://www.marco.org/
 ---

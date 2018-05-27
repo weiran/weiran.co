@@ -1,5 +1,5 @@
 ---
-title: FOSS Patents on Apple vs Samsung
+title: "FOSS Patents on Apple vs Samsung"
 date: "2012-08-26T21:08:50.000Z"
 passthroughUrl: http://www.fosspatents.com/2012/08/apples-billion-dollar-win-over-samsung.html
 ---

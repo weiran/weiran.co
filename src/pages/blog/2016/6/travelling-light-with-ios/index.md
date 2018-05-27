@@ -1,10 +1,9 @@
 ---
-title: Travelling Light with iOS
+title: "Travelling Light with iOS"
 date: "2016-06-20T15:00:00.000Z"
-
 ---
 
-\[caption id="" align="alignnone" width="3024.0"\]![ Beijing Theatre ](9215f172-4f34-4079-bc0b-44f49f4da831.jpg) Beijing Theatre \[/caption\]
+\[caption id="" align="alignnone" width="3024.0"\]![ Beijing Theatre ](100cf6b2-543c-4791-bfb0-112a38b40d3a.jpg) Beijing Theatre \[/caption\]
 
 It wasn't long ago that travelling on a trip longer than two weeks meant lumbering a laptop with you the whole way.
 
@@ -12,7 +11,7 @@ I've just recently returned from a four week trip travelling 5000 kilometres acr
 
 All I had was my iPhone and iPad (with a keyboard). Obviously I didn't write any software but I could do pretty much everything else. If you can, travelling light can make a big impact on your daily stress level. Here are a few tips and tricks I learned while on the road.
 
-\[caption id="" align="alignnone" width="4000.0"\]![ Afternoon nap in Xi'an ](ad95b461-45c9-4a6e-a9c1-3bf3aa875460.jpg) Afternoon nap in Xi'an \[/caption\]
+\[caption id="" align="alignnone" width="4000.0"\]![ Afternoon nap in Xi'an ](cd1061d3-c592-41e7-bf46-8794ba93a2ee.jpg) Afternoon nap in Xi'an \[/caption\]
 
 # Cellular data
 
@@ -22,7 +21,7 @@ It's hard to underestimate how useful having good cellular data coverage is. Wit
 
 The best source of information about buying SIM cards internationally is on [WikiVoyage](https://wikivoyage.org). Each country's page on WikiVoyage will have a section discussing the cheapest and easiest ways to get a data SIM. You could also use a carrier like Three UK which gives free data roaming to several countries. You just need a little bit of pre-planning to make sure you get the right SIM, with the right coverage, when you land.
 
-\[caption id="" align="alignnone" width="4000.0"\]![ Xi'an Bell Tower ](84d76bbe-9b43-4dde-a47e-a9a9e9a6eb1a.jpg) Xi'an Bell Tower \[/caption\]
+\[caption id="" align="alignnone" width="4000.0"\]![ Xi'an Bell Tower ](34f5feb0-501a-4575-9f7b-3c4d3e41308f.jpg) Xi'an Bell Tower \[/caption\]
 
 ## Dealing with the Great Firewall
 
@@ -36,7 +35,7 @@ The main problem is that using a constantly running VPN really hurts battery lif
 
 # Charging and battery life
 
-\[caption id="" align="alignnone" width="4000.0"\]![ Labrang Monastery  ](4c2b888e-d1d6-4da6-8c89-0c982086d9cf.jpg) Labrang Monastery  \[/caption\]
+\[caption id="" align="alignnone" width="4000.0"\]![ Labrang Monastery  ](ab9da9ca-1dba-4c2c-b5b9-eb452c22b621.jpg) Labrang Monastery  \[/caption\]
 
 ## Mobile power
 
@@ -54,7 +53,7 @@ For charging in hotels, I use an [Anker 5 port USB charger](http://amzn.to/1sMEy
 
 All of this fits neatly into an [Ecosusi bag](http://amzn.to/1sMES2X), making it easy to pack away.
 
-\[caption id="" align="alignnone" width="4095.0"\]![ Monk's dwellings at Labrang Monastery ](4b1ec128-52b9-42ee-b33d-8d1e940c7c39.jpg) Monk's dwellings at Labrang Monastery \[/caption\]
+\[caption id="" align="alignnone" width="4095.0"\]![ Monk's dwellings at Labrang Monastery ](6924259a-1a03-491c-ba9c-a9a9031fb55f.jpg) Monk's dwellings at Labrang Monastery \[/caption\]
 
 ## Bags
 
@@ -64,7 +63,7 @@ If you don't already, you should really use some [packing cubes](http://amzn.to/
 
 Last but not least, because I like to travel light I don't feel the need for a backpack, so my day to day bag is the handsome [Billingham Hadley Pro](http://amzn.to/1sMHfTl), a shoulder bag designed for cameras but equally useful when travelling. I like the proper latch, which prevents oppurtunistic theives, but also has a quick release mechanism for easy access. I like the new Fibernyte material, which is like canvas but completely waterproof and requires no maintenence. The pockets inside and outside are plenty for a bag this size, and the padding means you can store cameras, iPhones, and iPads without worry. I would also recommend a [shoulder pad](http://amzn.to/1ScaCmS) as the strap is quite slippery, and to give a bit more comfort after carrying that for a long day.
 
-\[caption id="" align="alignnone" width="4032.0"\]![ Oasis in the Gobi desert ](2fd6971a-b615-429b-8f6d-7467ef8db1bc.jpg) Oasis in the Gobi desert \[/caption\]
+\[caption id="" align="alignnone" width="4032.0"\]![ Oasis in the Gobi desert ](5a74fde1-e4ae-422b-97d7-fa5c7be0d761.jpg) Oasis in the Gobi desert \[/caption\]
 
 ## Misc
 

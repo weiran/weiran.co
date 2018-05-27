@@ -1,5 +1,5 @@
 ---
-title: Tweaked Apple TV uses die-shrunk A5
+title: "Tweaked Apple TV uses die-shrunk A5"
 date: "2013-03-11T08:31:16.000Z"
 passthroughUrl: http://www.macrumors.com/2013/03/10/tweaked-apple-tv-contains-die-shrunk-a5-chip-not-a5x/
 ---

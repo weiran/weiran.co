@@ -1,5 +1,5 @@
 ---
-title: Changes to Google Apps (or how we removed the free option)
+title: "Changes to Google Apps (or how we removed the free option)"
 date: "2012-12-07T09:23:01.000Z"
 passthroughUrl: http://googleenterprise.blogspot.co.uk/2012/12/changes-to-google-apps-for-businesses.html
 ---

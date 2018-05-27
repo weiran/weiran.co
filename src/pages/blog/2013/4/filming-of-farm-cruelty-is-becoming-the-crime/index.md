@@ -1,5 +1,5 @@
 ---
-title: Filming of farm cruelty is becoming the crime
+title: "Filming of farm cruelty is becoming the crime"
 date: "2013-04-08T07:56:23.000Z"
 passthroughUrl: http://www.nytimes.com/2013/04/07/us/taping-of-farm-cruelty-is-becoming-the-crime.html?_r=4&
 ---

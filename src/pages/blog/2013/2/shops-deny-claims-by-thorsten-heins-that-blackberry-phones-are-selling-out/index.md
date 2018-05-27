@@ -1,5 +1,5 @@
 ---
-title: Shops deny claims by Thorsten Heins that BlackBerry phones are selling out
+title: "Shops deny claims by Thorsten Heins that BlackBerry phones are selling out"
 date: "2013-02-08T10:36:23.000Z"
 passthroughUrl: http://www.telegraph.co.uk/technology/9853190/BlackBerry-10-shops-deny-claims-by-Thorsten-Heins-that-Z10-phones-are-selling-out.html
 ---

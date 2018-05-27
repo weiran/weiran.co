@@ -1,5 +1,5 @@
 ---
-title: What's wrong with Yahoo's purchase of Summly
+title: "What's wrong with Yahoo's purchase of Summly"
 date: "2013-03-27T09:29:13.000Z"
 passthroughUrl: http://hackingdistributed.com/2013/03/26/summly/
 ---

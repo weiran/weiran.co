@@ -1,5 +1,5 @@
 ---
-title: Flat UI is not the only way forward
+title: "Flat UI is not the only way forward"
 date: "2013-01-20T16:02:13.000Z"
 passthroughUrl: http://blog.maxrudberg.com/post/41005209081/flat-ui-is-not-the-only-way-forward
 ---

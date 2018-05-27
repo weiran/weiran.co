@@ -1,5 +1,5 @@
 ---
-title: New Apple TV with A5X revealed in FCC documents
+title: "New Apple TV with A5X revealed in FCC documents"
 date: "2013-01-29T23:53:36.000Z"
 passthroughUrl: http://www.anandtech.com/show/6709/slightly-smaller-apple-tv-32-a1469-contains-a5x-soc-bcm4334-combo
 ---

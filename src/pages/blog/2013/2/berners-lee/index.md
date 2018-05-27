@@ -1,7 +1,6 @@
 ---
-title: Tim Berners-Lee on the future of the web
+title: "Tim Berners-Lee on the future of the web"
 date: "2013-02-01T14:19:01.000Z"
-
 ---
 
 Tim Berners-Lee [spoke at a Linux conference today](http://www.zdnet.com/apps-no-root-your-device-serves-others-berners-lee-7000010661/) about mobile platforms and native apps vs. HTML:

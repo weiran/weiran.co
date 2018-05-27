@@ -1,5 +1,5 @@
 ---
-title: Doug Kass tweets Apple stock split rumour
+title: "Doug Kass tweets Apple stock split rumour"
 date: "2013-02-27T09:06:55.000Z"
 passthroughUrl: http://seekingalpha.com/currents/post/852491?source=email_rt_mc_readmore
 ---

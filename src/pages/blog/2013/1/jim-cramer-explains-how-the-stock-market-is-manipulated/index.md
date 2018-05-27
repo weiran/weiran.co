@@ -1,5 +1,5 @@
 ---
-title: Jim Cramer explains how the stock market is manipulated
+title: "Jim Cramer explains how the stock market is manipulated"
 date: "2013-01-16T09:28:21.000Z"
 passthroughUrl: http://www.youtube.com/watch?v=GOS8QgAQO-k
 ---

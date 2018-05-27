@@ -1,5 +1,5 @@
 ---
-title: Google wants to control new 'dotless' search domain
+title: "Google wants to control new 'dotless' search domain"
 date: "2013-04-11T09:39:15.000Z"
 passthroughUrl: http://techcrunch.com/2013/04/10/google-wants-to-operate-search-as-a-dotless-domain/
 ---

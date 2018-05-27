@@ -1,5 +1,5 @@
 ---
-title: Former iPhone UI Designer Defends Apple's Skeuomorphic Design Philosophy
+title: "Former iPhone UI Designer Defends Apple's Skeuomorphic Design Philosophy"
 date: "2012-09-18T13:50:21.000Z"
 passthroughUrl: http://www.fastcodesign.com/1670796/a-former-iphone-ui-designer-defends-apples-fake-leather-design-philosophy
 ---

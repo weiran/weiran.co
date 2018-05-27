@@ -1,5 +1,5 @@
 ---
-title: The risks of trusting experts
+title: "The risks of trusting experts"
 date: "2012-10-25T14:27:59.000Z"
 passthroughUrl: http://www.schneier.com/blog/archives/2012/10/the_risks_of_tr.html
 ---

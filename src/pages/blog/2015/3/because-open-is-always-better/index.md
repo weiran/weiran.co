@@ -1,5 +1,5 @@
 ---
-title: Because Open is Always Better
+title: "Because Open is Always Better"
 date: "2015-03-09T10:38:57.000Z"
 passthroughUrl: http://sealedabstract.com/rants/google-our-patron-saint-of-the-closed-web/
 ---

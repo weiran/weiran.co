@@ -1,5 +1,5 @@
 ---
-title: How to start a magazine and make a profit
+title: "How to start a magazine and make a profit"
 date: "2013-02-21T23:56:33.000Z"
 passthroughUrl: http://www.npr.org/blogs/money/2013/02/21/172588471/how-to-start-a-magazine-and-make-a-profit
 ---

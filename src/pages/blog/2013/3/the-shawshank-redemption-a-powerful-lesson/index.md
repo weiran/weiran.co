@@ -1,5 +1,5 @@
 ---
-title: 'The Shawshank Redemption': A powerful lesson
+title: "'The Shawshank Redemption': A powerful lesson"
 date: "2013-03-04T13:45:54.000Z"
 passthroughUrl: http://statspotting.com/a-lesson-from-the-shawshank-redemption/
 ---

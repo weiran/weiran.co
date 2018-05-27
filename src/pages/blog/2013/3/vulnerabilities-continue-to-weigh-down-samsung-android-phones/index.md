@@ -1,5 +1,5 @@
 ---
-title: Vulnerabilities continue to weigh down Samsung Android phones
+title: "Vulnerabilities continue to weigh down Samsung Android phones"
 date: "2013-03-21T08:20:30.000Z"
 passthroughUrl: http://threatpost.com/en_us/blogs/vulnerabilities-continue-weigh-down-samsung-android-phones-032013
 ---

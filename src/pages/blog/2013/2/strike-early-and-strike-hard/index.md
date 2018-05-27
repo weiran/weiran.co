@@ -1,5 +1,5 @@
 ---
-title: Strike early and strike hard
+title: "Strike early and strike hard"
 date: "2013-02-26T10:21:20.000Z"
 passthroughUrl: http://www.appleoutsider.com/2013/02/21/ps4/
 ---

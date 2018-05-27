@@ -1,5 +1,5 @@
 ---
-title: Netbot for App.net now free
+title: "Netbot for App.net now free"
 date: "2013-01-31T09:45:26.000Z"
 passthroughUrl: https://alpha.app.net/tapbots/post/2705300
 ---

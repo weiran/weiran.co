@@ -1,5 +1,5 @@
 ---
-title: Stock Android is far from perfect
+title: "Stock Android is far from perfect"
 date: "2012-12-06T11:08:07.000Z"
 passthroughUrl: http://www.androidpolice.com/2012/09/18/ux-things-i-hate-about-android/
 ---

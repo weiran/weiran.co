@@ -1,5 +1,5 @@
 ---
-title: Google Reader creator reflects
+title: "Google Reader creator reflects"
 date: "2013-03-14T15:13:08.000Z"
 passthroughUrl: http://gigaom.com/2013/03/13/chris-wetherll-google-reader/
 ---

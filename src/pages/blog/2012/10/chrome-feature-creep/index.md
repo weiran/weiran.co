@@ -1,5 +1,5 @@
 ---
-title: Chrome feature creep
+title: "Chrome feature creep"
 date: "2012-10-03T07:18:24.000Z"
 passthroughUrl: http://massivegreatness.com/bloated
 ---

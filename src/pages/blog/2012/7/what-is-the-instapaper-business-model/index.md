@@ -1,7 +1,6 @@
 ---
-title: What is the Instapaper business model?
+title: "What is the Instapaper business model?"
 date: "2012-07-13T10:40:01.000Z"
-
 ---
 
 > I sell an app for money, then I spend less than I make.

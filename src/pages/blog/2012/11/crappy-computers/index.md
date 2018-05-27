@@ -1,5 +1,5 @@
 ---
-title: Crappy computers
+title: "Crappy computers"
 date: "2012-11-05T08:46:53.000Z"
 passthroughUrl: http://ignorethecode.net/blog/2012/11/04/crappy_computers/
 ---

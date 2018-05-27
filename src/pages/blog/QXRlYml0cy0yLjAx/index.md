@@ -1,5 +1,5 @@
 ---
-title: Atebits 2.0
+title: "Atebits 2.0"
 date: "2012-10-15T22:53:16.000Z"
 passthroughUrl: http://www.atebits.com/news/atebits-2-0/
 ---

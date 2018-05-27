@@ -1,5 +1,5 @@
 ---
-title: More on the 'new' Apple TV
+title: "More on the 'new' Apple TV"
 date: "2013-01-31T11:00:38.000Z"
 passthroughUrl: http://thenextweb.com/apple/2013/01/30/apple-tv-32-is-just-a-mid-season-internal-upgrade-with-no-external-difference-in-size/?fromcat=all
 ---

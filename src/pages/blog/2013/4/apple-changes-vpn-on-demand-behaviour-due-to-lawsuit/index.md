@@ -1,5 +1,5 @@
 ---
-title: Apple changes VPN on Demand behaviour due to lawsuit
+title: "Apple changes VPN on Demand behaviour due to lawsuit"
 date: "2013-04-08T07:41:23.000Z"
 passthroughUrl: http://support.apple.com/kb/TS4550
 ---

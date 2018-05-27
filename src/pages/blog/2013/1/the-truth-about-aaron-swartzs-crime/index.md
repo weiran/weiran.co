@@ -1,5 +1,5 @@
 ---
-title: The truth about Aaron Swartz's "crime"
+title: "The truth about Aaron Swartz's "crime""
 date: "2013-01-14T10:14:56.000Z"
 passthroughUrl: http://unhandled.com/2013/01/12/the-truth-about-aaron-swartzs-crime/
 ---

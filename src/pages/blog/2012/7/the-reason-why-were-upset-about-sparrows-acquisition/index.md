@@ -1,5 +1,5 @@
 ---
-title: The reason why we’re upset about Sparrow’s acquisition
+title: "The reason why we’re upset about Sparrow’s acquisition"
 date: "2012-07-21T12:57:18.000Z"
 passthroughUrl: http://www.elezea.com/2012/07/sparrow-google-acquisition/
 ---

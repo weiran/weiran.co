@@ -1,5 +1,5 @@
 ---
-title: iPhone 5S planned for August, next iPads may debut as soon as April
+title: "iPhone 5S planned for August, next iPads may debut as soon as April"
 date: "2013-03-05T13:10:00.000Z"
 passthroughUrl: http://www.imore.com/iphone-5s-planned-august-next-ipads-may-debut-april
 ---

@@ -1,5 +1,5 @@
 ---
-title: An interface should get out of the way, except when it shouldn’t
+title: "An interface should get out of the way, except when it shouldn’t"
 date: "2013-02-08T16:04:07.000Z"
 passthroughUrl: http://www.elezea.com/2013/02/as-little-design-as-possible/
 ---

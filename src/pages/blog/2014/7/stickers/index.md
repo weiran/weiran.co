@@ -1,7 +1,6 @@
 ---
-title: Stickers
+title: "Stickers"
 date: "2014-07-29T07:56:25.000Z"
-
 ---
 
 I like this new advert.

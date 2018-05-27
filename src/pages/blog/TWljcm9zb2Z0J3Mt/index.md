@@ -1,5 +1,5 @@
 ---
-title: Microsoft's alternate universe
+title: "Microsoft's alternate universe"
 date: "2012-10-27T10:08:58.000Z"
 passthroughUrl: http://www.marco.org/2012/10/26/an-alternate-universe
 ---

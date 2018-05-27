@@ -1,5 +1,5 @@
 ---
-title: Microsoft has plans for more hardware
+title: "Microsoft has plans for more hardware"
 date: "2012-10-25T11:23:58.000Z"
 passthroughUrl: http://www.bbc.co.uk/news/technology-20072497
 ---

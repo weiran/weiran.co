@@ -1,5 +1,5 @@
 ---
-title: Bloomberg’s breathtaking propaganda piece suggests trouble for Samsung
+title: "Bloomberg’s breathtaking propaganda piece suggests trouble for Samsung"
 date: "2013-03-12T11:24:11.000Z"
 passthroughUrl: http://www.roughlydrafted.com/2013/02/12/bloombergs-breathtaking-propaganda-piece-suggests-trouble-for-samsung/
 ---

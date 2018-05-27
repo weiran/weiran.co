@@ -1,5 +1,5 @@
 ---
-title: Google releases Nik Collection photo tools
+title: "Google releases Nik Collection photo tools"
 date: "2013-03-26T08:29:59.000Z"
 passthroughUrl: http://www.niksoftware.com/nikcollection/usa/index.php?view=intro%2Fmain.shtml
 ---

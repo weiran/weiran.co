@@ -1,5 +1,5 @@
 ---
-title: Samsung hires judge who issued extreme ruling against Apple
+title: "Samsung hires judge who issued extreme ruling against Apple"
 date: "2013-02-28T14:46:13.000Z"
 passthroughUrl: http://www.fosspatents.com/2013/02/uk-judge-who-issued-extreme-ruling-for.html
 ---

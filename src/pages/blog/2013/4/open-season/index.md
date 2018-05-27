@@ -1,5 +1,5 @@
 ---
-title: Open season
+title: "Open season"
 date: "2013-04-09T09:59:03.000Z"
 passthroughUrl: http://www.appleoutsider.com/2013/04/08/open-season/
 ---

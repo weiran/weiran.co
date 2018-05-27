@@ -1,7 +1,6 @@
 ---
-title: Google Buys Sparrow
+title: "Google Buys Sparrow"
 date: "2012-07-20T16:04:16.000Z"
-
 ---
 
 I don't think anyone [saw this coming](http://sprw.me/):

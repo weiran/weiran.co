@@ -1,5 +1,5 @@
 ---
-title: Imagining a 5-inch iPhone
+title: "Imagining a 5-inch iPhone"
 date: "2013-01-29T13:05:42.000Z"
 passthroughUrl: http://www.imore.com/imagining-5-inch-iphone
 ---

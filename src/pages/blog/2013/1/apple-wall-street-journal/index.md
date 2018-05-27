@@ -1,7 +1,6 @@
 ---
-title: The suspicious timing of Wall Street Journal's piece about reduced iPhone orders
+title: "The suspicious timing of Wall Street Journal's piece about reduced iPhone orders"
 date: "2013-01-15T09:38:04.000Z"
-
 ---
 
 Yesterday, Wall Street Journal's claim that Apple had "halved" orders for iPhone 5 displays has caused a few stirs around here. Are the claims founded on fact or was it a cheap attempt to manipulate Apple's stock before the earning's call on January 23rd? Let's have a look at the facts.

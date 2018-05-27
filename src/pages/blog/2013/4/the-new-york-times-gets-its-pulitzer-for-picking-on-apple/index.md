@@ -1,5 +1,5 @@
 ---
-title: The New York Times gets its Pulitzer for picking on Apple
+title: "The New York Times gets its Pulitzer for picking on Apple"
 date: "2013-04-17T10:29:49.000Z"
 passthroughUrl: http://tech.fortune.cnn.com/2013/04/16/apple-pulitzer-ny-times/
 ---

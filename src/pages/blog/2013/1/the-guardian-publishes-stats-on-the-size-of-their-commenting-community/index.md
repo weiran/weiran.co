@@ -1,5 +1,5 @@
 ---
-title: The Guardian publishes stats on the size of their commenting community
+title: "The Guardian publishes stats on the size of their commenting community"
 date: "2013-01-02T09:30:55.000Z"
 passthroughUrl: http://www.currybet.net/cbet_blog/2012/12/guardian-comments-part-1057.php
 ---

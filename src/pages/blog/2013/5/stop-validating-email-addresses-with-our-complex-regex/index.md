@@ -1,5 +1,5 @@
 ---
-title: Stop validating email addresses with your complex Regex
+title: "Stop validating email addresses with your complex Regex"
 date: "2013-05-12T14:47:22.000Z"
 passthroughUrl: http://davidcel.is/blog/2012/09/06/stop-validating-email-addresses-with-regex/#.UY-agbyU8DI.twitter
 ---

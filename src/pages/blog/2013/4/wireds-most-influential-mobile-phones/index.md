@@ -1,5 +1,5 @@
 ---
-title: Wired's most influential mobile phones
+title: "Wired's most influential mobile phones"
 date: "2013-04-04T08:22:06.000Z"
 passthroughUrl: http://www.wired.com/gadgetlab/2013/04/influential-cellphones/?viewall=true
 ---

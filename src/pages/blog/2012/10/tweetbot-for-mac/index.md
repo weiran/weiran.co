@@ -1,5 +1,5 @@
 ---
-title: Tweetbot for Mac
+title: "Tweetbot for Mac"
 date: "2012-10-19T09:36:05.000Z"
 passthroughUrl: http://tapbots.com/software/tweetbot/mac/
 ---

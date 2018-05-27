@@ -1,5 +1,5 @@
 ---
-title: Apple's churning of the gut
+title: "Apple's churning of the gut"
 date: "2013-01-17T09:07:36.000Z"
 passthroughUrl: http://eliainsider.com/2013/01/16/apples-churning-gut/
 ---

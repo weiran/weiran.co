@@ -1,7 +1,6 @@
 ---
-title: A Second Season for Charlie Brooker's Black Mirror
+title: "A Second Season for Charlie Brooker's Black Mirror"
 date: "2012-07-13T12:01:51.000Z"
-
 ---
 
 Channel 4 is [bringing back Charlie Brooker's Black Mirror](http://www.chortle.co.uk/news/2012/07/12/15757/another_look_in_the_black_mirror) for a second series of three episodes: 

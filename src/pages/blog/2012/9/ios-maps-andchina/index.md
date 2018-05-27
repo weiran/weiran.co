@@ -1,5 +1,5 @@
 ---
-title: iOS Maps and China
+title: "iOS Maps and China"
 date: "2012-09-24T21:07:18.000Z"
 passthroughUrl: http://anthonydrendel.com/blog/2012/9/24/ios-maps-and-china.html
 ---

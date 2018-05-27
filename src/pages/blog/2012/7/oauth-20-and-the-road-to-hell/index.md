@@ -1,5 +1,5 @@
 ---
-title: OAuth 2.0 and the Road to Hell
+title: "OAuth 2.0 and the Road to Hell"
 date: "2012-07-26T09:12:54.000Z"
 passthroughUrl: http://hueniverse.com/2012/07/oauth-2-0-and-the-road-to-hell/
 ---

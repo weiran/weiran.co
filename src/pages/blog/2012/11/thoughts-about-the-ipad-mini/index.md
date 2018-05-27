@@ -1,7 +1,6 @@
 ---
-title: Thoughts about the iPad mini
+title: "Thoughts about the iPad mini"
 date: "2012-11-02T14:48:05.000Z"
-
 ---
 
 What can I say about the iPad mini that hasn't [already](http://daringfireball.net/2012/10/ipad_mini) [been](http://www.loopinsight.com) [said](http://www.theverge.com/2012/10/30/3576178/apple-ipad-mini-review)?

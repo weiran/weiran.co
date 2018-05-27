@@ -1,5 +1,5 @@
 ---
-title: 'Innovation'
+title: "'Innovation'"
 date: "2013-02-20T12:34:29.000Z"
 passthroughUrl: http://ihkdesigns.wordpress.com/2013/02/19/idiots-are-everywhere/
 ---

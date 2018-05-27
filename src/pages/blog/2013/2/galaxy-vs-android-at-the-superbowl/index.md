@@ -1,5 +1,5 @@
 ---
-title: Galaxy vs. Android at the Superbowl
+title: "Galaxy vs. Android at the Superbowl"
 date: "2013-02-04T17:00:39.000Z"
 passthroughUrl: http://ben-evans.com/benedictevans/2013/2/3/galaxy-versus-android
 ---

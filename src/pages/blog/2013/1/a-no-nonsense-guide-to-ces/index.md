@@ -1,5 +1,5 @@
 ---
-title: A no-nonsense guide to CES
+title: "A no-nonsense guide to CES"
 date: "2013-01-11T09:20:22.000Z"
 passthroughUrl: http://thewirecutter.com/2013/01/some-future-gadgets-id-maybe-buy-aka-a-realists-guide-to-ces/?utm_source=loopinsight.com&utm_medium=referral&utm_campaign=Feed%3A+loopinsight%2FKqJb+%28The+Loop%29
 ---

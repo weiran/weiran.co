@@ -1,7 +1,6 @@
 ---
-title: The Verge: Office 2013 Preview
+title: "The Verge: Office 2013 Preview"
 date: "2012-07-16T19:29:33.000Z"
-
 ---
 
 I like the [new look of Office 2013](http://www.theverge.com/2012/7/16/3156636/office-2013-screenshots-features-preview) and the "cloud" integration, but as The Verge reports:

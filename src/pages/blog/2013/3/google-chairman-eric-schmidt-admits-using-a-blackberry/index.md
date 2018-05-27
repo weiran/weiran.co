@@ -1,5 +1,5 @@
 ---
-title: Google chairman Eric Schmidt admits using a BlackBerry
+title: "Google chairman Eric Schmidt admits using a BlackBerry"
 date: "2013-03-22T14:57:36.000Z"
 passthroughUrl: http://www.guardian.co.uk/technology/2013/mar/21/eric-schmidt-blackberry-user
 ---

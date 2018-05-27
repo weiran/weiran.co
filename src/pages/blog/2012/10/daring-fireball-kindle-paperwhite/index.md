@@ -1,5 +1,5 @@
 ---
-title: Daring Fireball: Kindle Paperwhite
+title: "Daring Fireball: Kindle Paperwhite"
 date: "2012-10-11T11:12:25.000Z"
 passthroughUrl: http://daringfireball.net/2012/10/kindle_paperwhite
 ---

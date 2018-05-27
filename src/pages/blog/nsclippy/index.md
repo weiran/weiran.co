@@ -1,7 +1,6 @@
 ---
-title: NSClippy for iOS
+title: "NSClippy for iOS"
 date: "2013-04-04T13:52:40.000Z"
-
 ---
 
 What's the one thing iOS lacks? No it's not real multitasking, inter-app communication, or reliable data syncing. It's never had an animated assistant based on office stationary.

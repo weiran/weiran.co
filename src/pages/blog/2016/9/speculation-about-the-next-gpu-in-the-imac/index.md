@@ -1,7 +1,6 @@
 ---
-title: Speculation about the next GPU in the iMac
+title: "Speculation about the next GPU in the iMac"
 date: "2016-09-06T15:00:00.000Z"
-
 ---
 
 Tomorrow is Apple's big iPhone event day, with a dash of Apple Watch and software thrown in. However [Mark Gurman](gurman-mac) reports no new Macs at this event, so in lieu of real products announcements I thought I'd add some speculation about the new iMac GPUs now that AMD has released their brand new Radeon chips.
@@ -10,7 +9,7 @@ iMacs have used mobile graphics cards (GPUs) since 2011, when desktop GPUs start
 
 AMD make fine graphics cards, but in recent years Nvidia had the edge in terms of performance, heat, and power usage. The current top of the range AMD graphics card in the iMac, the Radeon R9 M395X, just doesn't compare well to Nvidia's 970M, even though on the spec sheet the AMD card should be faster. But in comparison the AMD card is slower, more power hungry, and thermally throttles when pushed.
 
-![](244b1c58-a1a6-4ff6-9eed-3911cd26b75f.jpg)
+![](f829c46d-ad8e-4cd5-9f13-06c4466ff34f.jpg)
 
 ## AMD Polaris
 

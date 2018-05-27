@@ -1,14 +1,13 @@
 ---
-title: The new-new Mac Pro
+title: "The new-new Mac Pro"
 date: "2013-06-14T08:58:46.000Z"
-
 ---
 
 Lots of people were worried when the [new-old Mac Pro](http://www.marco.org/2012/06/11/half-assed-mac-pro) was released last June. It was an incredibly incremental update, with slightly newer CPUs and a slightly reduced price. People interpreted this as Apple abandoning the pro desktop market in favour of their prosumer models.
 
 They couldn't have been more wrong.
 
-![](f9c71e44-bc92-45b6-b3b5-c71cb2a5ff2d.jpg)
+![](945f801c-0e79-4eb3-b940-f1ec1bab9e9e.jpg)
 
 > We didn't want to just make another version of the same old desktop idea that everyone's had. Like with MacBook Air, our engineering team has spent quite a bit of time thinking about the technology available today and what could be possible for the future of the pro desktop, what would be a new form factor, new design, **new capabilities for another ten years**.
 

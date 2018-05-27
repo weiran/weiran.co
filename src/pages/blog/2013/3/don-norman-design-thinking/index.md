@@ -1,5 +1,5 @@
 ---
-title: Don Norman: Design thinking
+title: "Don Norman: Design thinking"
 date: "2013-03-25T12:23:19.000Z"
 passthroughUrl: http://www.core77.com/blog/columns/rethinking_design_thinking_24579.asp?utm_source=loopinsight.com&utm_medium=referral&utm_campaign=Feed
 ---

@@ -1,5 +1,5 @@
 ---
-title: Apple-Google Maps Talks Crashed Over Voice-Guided Directions
+title: "Apple-Google Maps Talks Crashed Over Voice-Guided Directions"
 date: "2012-09-27T08:07:48.000Z"
 passthroughUrl: http://allthingsd.com/20120926/apple-google-maps-talks-crashed-over-voice-guided-directions/
 ---

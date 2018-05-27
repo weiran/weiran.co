@@ -1,5 +1,5 @@
 ---
-title: Civilized Discourse Construction Kit
+title: "Civilized Discourse Construction Kit"
 date: "2013-02-05T23:07:01.000Z"
 passthroughUrl: http://www.codinghorror.com/blog/2013/02/civilized-discourse-construction-kit.html
 ---

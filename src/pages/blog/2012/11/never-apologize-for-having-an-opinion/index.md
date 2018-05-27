@@ -1,5 +1,5 @@
 ---
-title: Never apologize for having an opinion
+title: "Never apologize for having an opinion"
 date: "2012-11-20T09:54:30.000Z"
 passthroughUrl: http://massivegreatness.com/neutral-or-neutered
 ---

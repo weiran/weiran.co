@@ -1,5 +1,5 @@
 ---
-title: How Apple v. Samsung Was Explained To the Jury - Slashdot
+title: "How Apple v. Samsung Was Explained To the Jury - Slashdot"
 date: "2012-08-01T18:14:26.000Z"
 passthroughUrl: http://apple.slashdot.org/comments.pl?sid=3017801&cid=40836821
 ---

@@ -1,7 +1,6 @@
 ---
-title: Hackers 1.1.1
+title: "Hackers 1.1.1"
 date: "2013-03-15T15:19:08.000Z"
-
 ---
 
 Last night, Apple approved the latest [Hackers](http://weiranzhang.com/hackers/) update. While the version number may have just increased by a paltry 0.0.1, you'll find lots of new stuff:

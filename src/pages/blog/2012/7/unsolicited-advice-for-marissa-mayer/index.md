@@ -1,7 +1,6 @@
 ---
-title: Unsolicited Advice for Marissa Mayer
+title: "Unsolicited Advice for Marissa Mayer"
 date: "2012-07-18T11:53:02.000Z"
-
 ---
 
 Former Yahoo engineering manager [Sriram Krishnan has some unsolicited advice for Yahoo's new CEO](http://sriramk.com/unsolicitedyahoo.html):

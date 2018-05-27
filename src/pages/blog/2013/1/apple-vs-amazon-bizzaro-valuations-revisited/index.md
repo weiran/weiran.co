@@ -1,5 +1,5 @@
 ---
-title: Apple vs. Amazon: bizzaro valuations revisited
+title: "Apple vs. Amazon: bizzaro valuations revisited"
 date: "2013-01-30T15:25:34.000Z"
 passthroughUrl: http://tech.fortune.cnn.com/2013/01/29/apple-vs-amazon-aapl-amzn-apple-inc/
 ---

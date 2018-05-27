@@ -1,5 +1,5 @@
 ---
-title: Open and shut
+title: "Open and shut"
 date: "2013-03-01T10:28:04.000Z"
 passthroughUrl: http://daringfireball.net/2013/03/open_and_shut
 ---

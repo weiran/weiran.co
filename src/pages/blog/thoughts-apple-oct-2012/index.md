@@ -1,7 +1,6 @@
 ---
-title: Thoughts about Apple's October 2012 event
+title: "Thoughts about Apple's October 2012 event"
 date: "2012-10-25T08:52:03.000Z"
-
 ---
 
 ### New iMacs and MacBook Pros

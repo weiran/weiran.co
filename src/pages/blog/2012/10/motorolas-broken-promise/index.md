@@ -1,5 +1,5 @@
 ---
-title: Motorola's broken promise
+title: "Motorola's broken promise"
 date: "2012-10-06T11:45:51.000Z"
 passthroughUrl: http://news.cnet.com/8301-1035_3-57526994-94/android-users-outraged-over-motorolas-broken-promise/
 ---

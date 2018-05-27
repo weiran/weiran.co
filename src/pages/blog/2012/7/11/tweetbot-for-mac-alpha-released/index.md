@@ -1,12 +1,11 @@
 ---
-title: Tweetbot for Mac Alpha released
+title: "Tweetbot for Mac Alpha released"
 date: "2012-07-11T17:42:10.000Z"
-
 ---
 
 The best Twitter app for iPhone and iPad is now on the Mac. A [public alpha has been released today](http://tapbots.com/tweetbot_mac/).
 
-![](51c6c217-09bb-4026-8adf-5a66477f0a42.png)
+![](ba4a0952-00ab-48e6-88aa-3770eac0b83e.png)
 
 More from the [Tapbots blog](http://tapbots.com/blog/tweetbot/tweetbot-for-mac):
 

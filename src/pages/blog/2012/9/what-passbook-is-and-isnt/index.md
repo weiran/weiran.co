@@ -1,5 +1,5 @@
 ---
-title: What Passbook is and isn't
+title: "What Passbook is and isn't"
 date: "2012-09-21T09:14:04.000Z"
 passthroughUrl: http://www.reddit.com/r/apple/comments/107w8y/what_passbook_is_and_isnt/
 ---
