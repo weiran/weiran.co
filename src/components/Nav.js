@@ -3,31 +3,46 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Index from '../pages'
 
+import { rhythm, scale } from '../utils/typography'
+
 class Nav extends React.Component {
+  constructor(props) {
+    super(props)
+    const pages = [{
+      name: "Blog",
+      link: "/"
+    }, {
+      name: "About",
+      link: "/about"
+    }, {
+      name: "Projects",
+      link: "/projects"
+    }, {
+      name: "Contact",
+      link: "/contact"
+    }]
+    this.state = {
+      pages: pages
+    }
+  }
+
   render() {
     return (
-      <div>
+      <div style={{
+        textAlign: "center",
+        marginBottom: rhythm(2)
+      }}>
         <ul>
-          <li>
-            <Link to={Index}>
-              Blog
-            </Link>
-          </li>
-          <li>
-            <Link to={Index}>
-              About
-            </Link>
-          </li>
-          <li>
-            <Link>
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link>
-              Contact
-            </Link>
-          </li>
+          {this.state.pages.map(page => 
+            <li style={{
+              display: "inline",
+              margin: "0 " + rhythm(1.5)
+            }}>
+              <Link to={page.link}>
+                {page.name}
+              </Link>
+            </li>
+          )}
         </ul>
       </div>
     )

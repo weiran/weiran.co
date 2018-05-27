@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import logoPic from '../../static/logo.png'
+
 import { rhythm, scale } from '../utils/typography'
 
 class Template extends React.Component {
@@ -20,6 +22,7 @@ class Template extends React.Component {
             ...scale(1.5),
             marginBottom: rhythm(1.5),
             marginTop: 0,
+            textAlign: 'center',
           }}
         >
           <Link
@@ -30,7 +33,13 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            weiran.co
+            <img
+              src={logoPic}
+              alt={`weiran.co`}
+              style={{
+                width: rhythm(14),
+              }}
+            />
           </Link>
         </h1>
       )

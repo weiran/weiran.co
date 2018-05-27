@@ -3,8 +3,10 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 
-import Bio from '../components/Bio'
+import Nav from '../components/Nav'
 import Title from '../components/Title'
+import Bio from '../components/Bio'
+
 import { rhythm, scale } from '../utils/typography'
 
 class BlogPostTemplate extends React.Component {
@@ -15,6 +17,7 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <div>
+        <Nav />
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
         <Title title={post.frontmatter.title} passthroughUrl={post.frontmatter.passthroughUrl} />
         <p
@@ -33,7 +36,7 @@ class BlogPostTemplate extends React.Component {
         </Link>
         <hr
           style={{
-            marginBottom: rhythm(1),
+            margin: rhythm(1) + " 0",
           }}
         />
         <Bio />
