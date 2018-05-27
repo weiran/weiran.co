@@ -1,8 +1,5 @@
 import React from 'react'
 
-// Import typefaces
-import 'typeface-sunflower'
-
 import profilePic from './profile-pic.png'
 import { rhythm } from '../utils/typography'
 

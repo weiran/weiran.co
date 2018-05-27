@@ -3,6 +3,8 @@ import Link from 'gatsby-link'
 
 import logoPic from '../../static/logo.png'
 
+import lato from 'typeface-lato'
+
 import { rhythm, scale } from '../utils/typography'
 
 class Template extends React.Component {
@@ -47,14 +49,12 @@ class Template extends React.Component {
       header = (
         <h3
           style={{
-            fontFamily: 'Sunflower, sans-serif',
             marginTop: 0,
-            marginBottom: rhythm(-1),
+            textAlign: 'center',
           }}
         >
           <Link
             style={{
-              boxShadow: 'none',
               textDecoration: 'none',
               color: 'inherit',
             }}

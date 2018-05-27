@@ -24,8 +24,8 @@
     "gatsby-transformer-remark": "^1.7.40",
     "gatsby-transformer-sharp": "^1.6.22",
     "lodash": "^4.17.5",
-    "typeface-sunflower": "0.0.58",
-    "typography-theme-wordpress-2016": "^0.15.10"
+    "typeface-lato": "0.0.54",
+    "typography-theme-noriega": "^0.15.10"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
