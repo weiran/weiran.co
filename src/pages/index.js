@@ -8,8 +8,8 @@ import { rhythm } from '../utils/typography'
 
 class BlogIndex extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const siteTitle = this.props.data.site.siteMetadata.title
+    const posts = this.props.data.allMarkdownRemark.edges
 
     return (
       <div>
