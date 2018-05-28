@@ -5,7 +5,6 @@ module.exports = {
     description: 'Weiran Zhang',
     siteUrl: 'https://weiran.co',
   },
-  pathPrefix: '/weiran.co',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
