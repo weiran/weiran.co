@@ -1,9 +1,8 @@
-# gatsby-starter-blog
-Gatsby starter for creating a blog
-
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-
-`gatsby new gatsby-blog https://github.com/gatsbyjs/gatsby-starter-blog`
+# weiran.co
+Repository of the Gatsby website weiran.co.
 
 ## Running in development
 `gatsby develop`
+
+## Credits
+* [Gatsby Starter Blog](https://github.com/gatsbyjs/gatsby-starter-blog)
