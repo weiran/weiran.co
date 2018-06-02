@@ -31,7 +31,7 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.date}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <Link to={post.slug}>
+        <Link to={post.link}>
           ⌘
         </Link>
         <hr
