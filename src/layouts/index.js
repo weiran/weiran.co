@@ -19,7 +19,9 @@ class Template extends React.Component {
       rootPath = __PATH_PREFIX__ + `/`
     }
 
-    if (location.pathname === rootPath) {
+    const isRoot = location.pathname === rootPath
+
+    if (isRoot) {
       header = (
         <h1
           style={{
@@ -62,7 +64,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            weiran.co
+            ⌘<br />weiran.co
           </Link>
         </h3>
       )
@@ -79,6 +81,7 @@ class Template extends React.Component {
               marginRight: 'auto',
               maxWidth: rhythm(24),
               padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+              paddingBottom: isRoot ? rhythm(1.5) : rhythm(0.5),
               color: 'white',
             }}
           >
