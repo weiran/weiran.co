@@ -5,7 +5,7 @@ date: "2018-06-02T11:45:00.000Z"
 
 I've used Squarespace as the host for this website since 2012, and I really enjoyed trading small monthly fee for never having to worry about how any of it worked. 
 
-However my blogging has become very sproadic, and the content of this website has become much more static -- often months of years between updates.
+However my blogging has become very sproadic, and the content of this website has become much more static -- often months or years between updates.
 
 But if I were being honest, I was really looking for an excuse to fiddle around with something. And after taking inspiration from my friend [Eddie moving his blog to Gatsby](https://eddielee.me/hello-gatsby), I decided -- under the pretence of saving money -- to migrate my website to Gatsby as well. 
 
