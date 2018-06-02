@@ -3,7 +3,6 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 
-import Nav from '../components/Nav'
 import Title from '../components/Title'
 import Bio from '../components/Bio'
 
@@ -17,7 +16,6 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <div>
-        <Nav />
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
         <h1>
           <Title title={post.frontmatter.title} passthroughUrl={post.frontmatter.passthroughUrl} slug={post.slug} />

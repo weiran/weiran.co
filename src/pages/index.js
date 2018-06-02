@@ -2,7 +2,6 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
-import Nav from '../components/Nav'
 import Title from '../components/Title'
 import Bio from '../components/Bio'
 import { rhythm, scale } from '../utils/typography'
@@ -15,7 +14,6 @@ class Index extends React.Component {
 
     return (
       <div>
-        <Nav />
         <Helmet title={siteTitle} />
         <Bio />
         {posts.map(({ node }, index) => {

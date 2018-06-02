@@ -30,15 +30,19 @@ class Nav extends React.Component {
     return (
       <div style={{
         textAlign: "center",
-        marginBottom: rhythm(2)
+        marginBottom: rhythm(1)
       }}>
-        <ul>
+        <ul style={{
+          margin: 0
+        }}>
           {this.state.pages.map((page, index) => 
             <li key={index} style={{
               display: "inline",
               margin: "0 " + rhythm(1.5)
             }}>
-              <Link to={page.link}>
+              <Link to={page.link} style={{
+                color: 'white'
+              }}>
                 {page.name}
               </Link>
             </li>

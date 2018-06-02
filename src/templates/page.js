@@ -3,7 +3,6 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 
-import Nav from '../components/Nav'
 import Bio from '../components/Bio'
 import { rhythm, scale } from '../utils/typography'
 
@@ -14,7 +13,6 @@ class PageTemplate extends React.Component {
 
     return (
       <div>
-        <Nav />
         <Helmet title={`${page.frontmatter.title} | ${siteTitle}`} />
         <h1>{page.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: page.html }} />

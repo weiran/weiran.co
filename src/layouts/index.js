@@ -7,6 +7,8 @@ import lato from 'typeface-lato'
 
 import { rhythm, scale } from '../utils/typography'
 
+import Nav from '../components/Nav'
+
 class Template extends React.Component {
   render() {
     const { location, children } = this.props
@@ -66,16 +68,34 @@ class Template extends React.Component {
       )
     }
     return (
-      <div
-        style={{
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
-        {header}
-        {children()}
+      <div>
+        <div style={{
+          backgroundColor: '#0cbaba',
+          backgroundImage: 'linear-gradient(315deg, #0cbaba 0%, #380036 74%)'
+        }}>
+          <div
+            style={{
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              maxWidth: rhythm(24),
+              padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+              color: 'white',
+            }}
+          >
+            {header}
+            <Nav />
+          </div>
+        </div>
+        <div
+          style={{
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            maxWidth: rhythm(24),
+            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          }}
+        >
+          {children()}
+        </div>
       </div>
     )
   }
