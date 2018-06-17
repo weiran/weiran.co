@@ -81,3 +81,22 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     })
   }
 }
+
+const replacePath = _path => (_path === `/` ? _path : _path.replace(/\/$/, ``))
+
+// Implement the Gatsby API “onCreatePage”. This is
+// called after every page is created.
+exports.onCreatePage = ({ page, boundActionCreators }) => {
+  const { createPage, deletePage } = boundActionCreators
+  return new Promise(resolve => {
+    const oldPage = Object.assign({}, page)
+    // Remove trailing slash unless page is /
+    page.path = replacePath(page.path)
+    if (page.path !== oldPage.path) {
+      // Replace new page with old page
+      deletePage(oldPage)
+      createPage(page)
+    }
+    resolve()
+  })
+}

@@ -21,10 +21,6 @@ class Template extends React.Component {
 
     const isRoot = location.pathname === rootPath
 
-    function removeServiceWorker() {
-      return {__html: "if (typeof window !== 'undefined' && 'serviceWorker' in navigator) { window.navigator.serviceWorker.getRegistrations().then(registrations => { registrations.forEach(r => r.unregister()) }) }"}
-    }
-
     if (isRoot) {
       header = (
         <h1
@@ -103,7 +99,6 @@ class Template extends React.Component {
         >
           {children()}
         </div>
-        <script dangerouslySetInnerHTML={removeServiceWorker()}></script>
       </div>
     )
   }
