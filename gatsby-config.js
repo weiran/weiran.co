@@ -54,6 +54,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-remove-trailing-slashes`,
+    `gatsby-plugin-remove-serviceworker`,
     `gatsby-plugin-netlify`, // has to be last
   ],
 }
