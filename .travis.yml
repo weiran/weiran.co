@@ -7,9 +7,12 @@ os:
 node_js:
   - "node"
   - "lts/*"
-  - "7"
   - "8"
+
+before_script:
+  - "npm i -g gatsby-cli"
 
 script:
   - npm install
   - npm run lint
+  - gatsby build
