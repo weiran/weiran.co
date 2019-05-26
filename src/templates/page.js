@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import get from 'lodash/get'
 import Bio from '../components/Bio'
 import typography from '../utils/typography'
-import Layout from '../components/index'
+import Layout from '../components/layout'
 const rhythm = typography.rhythm
 
 class PageTemplate extends React.Component {

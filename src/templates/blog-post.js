@@ -4,7 +4,7 @@ import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Title from '../components/Title'
 import Bio from '../components/Bio'
-import Layout from '../components/index'
+import Layout from '../components/layout'
 import typography from '../utils/typography'
 const rhythm = typography.rhythm
 const scale = typography.scale

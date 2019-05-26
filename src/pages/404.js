@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from "../components/index"
+import Layout from "../components/layout"
 
 
 class NotFoundPage extends React.Component {
