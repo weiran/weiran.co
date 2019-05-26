@@ -1,10 +1,13 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import Layout from "../components/index"
+import { Link, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 
 import Title from '../components/Title'
 import Bio from '../components/Bio'
-import { rhythm, scale } from '../utils/typography'
+import typography from '../utils/typography'
+const rhythm = typography.rhythm
+const scale = typography.scale
 
 class Index extends React.Component {
   render() {
@@ -13,38 +16,40 @@ class Index extends React.Component {
       item.node.frontmatter.type !== "page")
 
     return (
-      <div>
-        <Helmet title={siteTitle} />
-        <Bio />
-        {posts.map(({ node }, index) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3 style={{
-                marginBottom: rhythm(0.25),
-                fontSize: node.frontmatter.passthroughUrl ? '1.21225rem' : '1.618rem',
-              }}>
-                <Title title={node.frontmatter.title} passthroughUrl={node.frontmatter.passthroughUrl} slug={node.fields.slug} />
-              </h3>
-              <p style={{
-                ...scale(-1 / 5),
-                marginBottom: node.frontmatter.passthroughUrl ? rhythm(0) : rhythm(0.75),
-                display: 'block',
-              }}>{node.frontmatter.date}</p>
-              <div style={{
-                marginBottom: rhythm(2)
-              }}>
-                <p dangerouslySetInnerHTML={{ __html: index > 1 ? node.excerpt : node.html }} style={{
-                  marginBottom: rhythm(0.5)
-                }} />
-                <Link to={node.fields.slug}>
-                  ⌘
-                </Link>
+      <Layout location={this.props.location}>
+        <div>
+          <Helmet title={siteTitle} />
+          <Bio />
+          {posts.map(({ node }, index) => {
+            const title = node.frontmatter.title || node.fields.slug
+            return (
+              <div key={node.fields.slug}>
+                <h3 style={{
+                  marginBottom: rhythm(0.25),
+                  fontSize: node.frontmatter.passthroughUrl ? '1.21225rem' : '1.618rem',
+                }}>
+                  <Title title={node.frontmatter.title} passthroughUrl={node.frontmatter.passthroughUrl} slug={node.fields.slug} />
+                </h3>
+                <p style={{
+                  ...scale(-1 / 5),
+                  marginBottom: node.frontmatter.passthroughUrl ? rhythm(0) : rhythm(0.75),
+                  display: 'block',
+                }}>{node.frontmatter.date}</p>
+                <div style={{
+                  marginBottom: rhythm(2)
+                }}>
+                  <div dangerouslySetInnerHTML={{ __html: index > 1 ? node.excerpt : node.html }} style={{
+                    marginBottom: rhythm(0.5)
+                  }} />
+                  <Link to={node.fields.slug}>
+                    ⌘
+                  </Link>
+                </div>
               </div>
-            </div>
-          )
-        })}
-      </div>
+            )
+          })}
+        </div>
+      </Layout>
     )
   }
 }

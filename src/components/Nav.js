@@ -1,9 +1,7 @@
 import React from 'react'
-
-import Link from 'gatsby-link'
-import Index from '../pages'
-
-import { rhythm, scale } from '../utils/typography'
+import { Link } from 'gatsby'
+import typography from '../utils/typography'
+const rhythm = typography.rhythm
 
 class Nav extends React.Component {
   constructor(props) {

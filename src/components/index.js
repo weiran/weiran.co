@@ -1,13 +1,10 @@
 import React from 'react'
-import Link from 'gatsby-link'
-
+import { Link } from 'gatsby'
 import logoPic from '../../static/logo.png'
-
-import lato from 'typeface-lato'
-
-import { rhythm, scale } from '../utils/typography'
-
-import Nav from '../components/Nav'
+import Nav from './Nav'
+import typography from '../utils/typography'
+const rhythm = typography.rhythm
+const scale = typography.scale
 
 class Template extends React.Component {
   render() {
@@ -97,7 +94,7 @@ class Template extends React.Component {
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
           }}
         >
-          {children()}
+          {children}
         </div>
       </div>
     )
