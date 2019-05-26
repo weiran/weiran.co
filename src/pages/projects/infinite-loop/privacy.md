@@ -1,5 +1,5 @@
 ---
-title: Privacy
+title: Infinite Loop Privacy Policy
 type: page
 ---
 
