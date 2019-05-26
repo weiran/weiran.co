@@ -1,9 +1,9 @@
 ---
-title: Watch It Later Privacy Policy
+title: Infinite Loop Privacy Policy
 type: page
 ---
 
-<p> Weiran Zhang built the Watch It Later app as a Free app. This SERVICE is provided by Weiran Zhang at no cost and is intended for use as is.
+<p> Weiran Zhang built the Infinite Loop app as a Free app. This SERVICE is provided by Weiran Zhang at no cost and is intended for use as is.
     </p> <p>This page is used to inform website visitors regarding our policies with the collection, use, and
       disclosure of Personal Information if anyone decided to use our Service.
     </p> <p>If you choose to use our Service, then you agree to the collection and use of information in relation
@@ -13,7 +13,7 @@ type: page
     </p> <p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible
       at Drank unless otherwise defined in this Privacy Policy.
     </p> <p><strong>Information Collection and Use</strong></p> <p>For a better experience, while using our Service, we may require you to provide us with certain
-      personally identifiable information, including but not limited to videos you've watched on the Service. The information that we request is will be retained by us and used as described in this privacy policy.
+      personally identifiable information, including but not limited to Caffeine intake, Alcohol intake, Sugar intake, Water intake. The information that we request is will be retained by us and used as described in this privacy policy.
     </p> <p>The app does use third party services that may collect information used to identify you.</p> <!----> <p><strong>Log Data</strong></p> <p> We want to inform you that whenever you use our Service, in a case of an
       error in the app we collect data and information (through third party products) on your phone
       called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address,
