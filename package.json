@@ -33,7 +33,9 @@
   },
   "devDependencies": {
     "eslint": "^5.16.0",
+    "eslint-config-react-app": "^4.0.1",
     "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-react-hooks": "^1.6.0",
     "gh-pages": "^2.0.1",
     "prettier": "^1.17.1",
     "react-dom": "^16.8.6",

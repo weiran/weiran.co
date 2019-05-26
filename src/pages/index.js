@@ -28,7 +28,7 @@ class Index extends React.Component {
                   marginBottom: rhythm(0.25),
                   fontSize: node.frontmatter.passthroughUrl ? '1.21225rem' : '1.618rem',
                 }}>
-                  <Title title={node.frontmatter.title} passthroughUrl={node.frontmatter.passthroughUrl} slug={node.fields.slug} />
+                  <Title title={title} passthroughUrl={node.frontmatter.passthroughUrl} slug={node.fields.slug} />
                 </h3>
                 <p style={{
                   ...scale(-1 / 5),
