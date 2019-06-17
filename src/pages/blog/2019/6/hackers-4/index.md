@@ -3,7 +3,7 @@ title: "Hackers 4.0"
 date: "2019-06-17T22:00:00.000Z"
 ---
 
-I just shipped biggest updates to [Hackers]((https://itunes.apple.com/gb/app/hackers-hacker-news-reading/id603503901?at=11l4G8&ct=weiran.co)) since 2017: 4.0. A lot of changes come with this new versions, some highlights include: 
+I just shipped biggest updates to [Hackers](https://itunes.apple.com/gb/app/hackers-hacker-news-reading/id603503901?at=11l4G8&ct=weiran.co) since 2017: 4.0. A lot of changes come with this new versions, some highlights include: 
 
 * You can now login to your Hacker News account in the app
 * That means **swipe right** to up vote posts and comments
