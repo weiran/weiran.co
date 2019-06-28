@@ -33,9 +33,11 @@ class BlogPostTemplate extends React.Component {
             {post.frontmatter.date}
           </p>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
-          <Link to={post.link}>
-            ⌘
-          </Link>
+          <p>
+            <Link to={post.link}>
+              ⌘
+            </Link>
+          </p>
           <hr
             style={{
               margin: rhythm(1) + " 0",
@@ -50,6 +52,7 @@ class BlogPostTemplate extends React.Component {
               justifyContent: 'space-between',
               listStyle: 'none',
               padding: 0,
+              marginLeft: 0
             }}
           >
             {previous && (

@@ -62,24 +62,21 @@ class Template extends React.Component {
       )
     }
     return (
-      <div>
-        <div style={{
-          backgroundColor: '#0cbaba',
-          backgroundImage: 'linear-gradient(315deg, #0cbaba 0%, #380036 74%)'
-        }}>
-          <div
-            style={{
-              marginLeft: 'auto',
-              marginRight: 'auto',
-              maxWidth: rhythm(24),
-              padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-              paddingBottom: isRoot ? rhythm(1.5) : rhythm(0.5),
-              color: 'white',
-            }}
-          >
-            {header}
-            <Nav />
-          </div>
+      <div style={{
+        backgroundColor: '#D1ABD1'
+      }}>
+        <div
+          style={{
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            maxWidth: rhythm(24),
+            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+            paddingBottom: isRoot ? rhythm(1.5) : rhythm(0.5),
+            color: 'white',
+          }}
+        >
+          {header}
+          <Nav />
         </div>
         <div
           style={{

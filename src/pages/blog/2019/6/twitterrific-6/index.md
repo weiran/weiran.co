@@ -5,7 +5,7 @@ date: "2019-06-16T12:01:00.000Z"
 
 Iconfactory just released their latest update to the oldest Twitter app around: [Twitterrific](https://twitterrific.com/ios). I talked a bit about Twitterrific in [my last post](/blog/2019/5/blogging-again/), the Mac version was the first ever desktop app that used Twitter's (then undocumented) API.
 
-## #NotMyTwitter
+### #NotMyTwitter
 
 In recent years I've been a big [Tweetbot](https://tapbots.com/tweetbot) user, especially since they brought [Tweetbot to the Mac](https://tapbots.com/tweetbot/mac/), and in general I've been pretty happy with it. However with the coming demise of [Tweet Marker](https://www.manton.org/2019/05/15/saying-goodbye-to.html), and Tweetbot's inability to use iCloud for timeline syncing when iCloud Drive is disabled (my corporate Mac doesn't allow iCloud Drive) has had me looking at Twitter app ecosystem again.
 
@@ -13,7 +13,7 @@ The first thing I tried was the official Twitter app, which I still use maybe on
 
 What I love about Tweetbot and Twitterrific is they keep the original spirit of Twitter alive. I don't want a machine to tell me what tweets I should be looking at. They're only 280 characters max, I can read every single one on my timeline. Twitterrific 6 is a great update to an aging app, bringing it up to date with modern design trends and standards.
 
-## Twitterrific 6
+### Twitterrific 6
 
 ![](twitterrific.png)
 
