@@ -24,12 +24,12 @@ class Index extends React.Component {
             const title = node.frontmatter.title || node.fields.slug
             return (
               <div key={node.fields.slug}>
-                <h3 style={{
+                <h2 style={{
                   marginBottom: rhythm(0.25),
                   fontSize: node.frontmatter.passthroughUrl ? '1.21225rem' : '1.618rem',
                 }}>
                   <Title title={title} passthroughUrl={node.frontmatter.passthroughUrl} slug={node.fields.slug} />
-                </h3>
+                </h2>
                 <p style={{
                   ...scale(-1 / 5),
                   marginBottom: node.frontmatter.passthroughUrl ? rhythm(0) : rhythm(0.75),
@@ -41,9 +41,14 @@ class Index extends React.Component {
                   <div dangerouslySetInnerHTML={{ __html: index > 1 ? node.excerpt : node.html }} style={{
                     marginBottom: rhythm(0.5)
                   }} />
-                  <Link to={node.fields.slug}>
-                    ⌘
-                  </Link>
+                  <p>
+                    <Link to={node.fields.slug}>
+                      ⌘
+                    </Link>
+                  </p>
+                  <hr style={{
+                    marginTop: rhythm(2)
+                  }} />
                 </div>
               </div>
             )
