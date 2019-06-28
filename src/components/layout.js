@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import logoPic from '../../static/logo.png'
 import Nav from './Nav'
 import typography from '../utils/typography'
+import './layout.css'
 const rhythm = typography.rhythm
 const scale = typography.scale
 
@@ -62,17 +63,14 @@ class Template extends React.Component {
       )
     }
     return (
-      <div style={{
-        backgroundColor: '#D1ABD1'
-      }}>
+      <div>
         <div
           style={{
             marginLeft: 'auto',
             marginRight: 'auto',
             maxWidth: rhythm(24),
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-            paddingBottom: isRoot ? rhythm(1.5) : rhythm(0.5),
-            color: 'white',
+            paddingBottom: isRoot ? rhythm(1.5) : rhythm(0.5)
           }}
         >
           {header}
