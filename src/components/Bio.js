@@ -10,7 +10,7 @@ class Bio extends React.Component {
       <div
         style={{
           display: 'flex',
-          marginBottom: rhythm(2.5),
+          marginBottom: rhythm(2.5)
         }}
       >
         <img
@@ -18,15 +18,22 @@ class Bio extends React.Component {
           alt={`Weiran Zhang`}
           style={{
             marginRight: rhythm(1 / 2),
-            marginBottom: 0,
+            marginTop: "auto",
+            marginBottom: "auto",
             width: rhythm(2),
             height: rhythm(2),
           }}
         />
-        <p>
-          Written by <strong>Weiran Zhang</strong> who lives and works in Nottingham.{' '}
+        <p style={{
+          marginBottom: 0
+        }}>
+          Hi, I'm <strong>Weiran Zhang</strong>. I work as a Software 
+          Enginnering Manager at Capital One. I have a passion for iOS and
+          building thriving software teams. This blog is a place
+          for me to document things I've learned and things I find interesting. 
+          {' '}
           <a href="https://twitter.com/weiran">
-            You should follow him on Twitter
+            You should follow me on Twitter
           </a>
           .
         </p>
