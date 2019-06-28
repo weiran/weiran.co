@@ -34,7 +34,7 @@ class Index extends React.Component {
                   ...scale(-1 / 5),
                   marginBottom: node.frontmatter.passthroughUrl ? rhythm(0) : rhythm(0.75),
                   display: 'block',
-                }}>{node.frontmatter.date}</p>
+                }}>{node.frontmatter.date.toUpperCase()}</p>
                 <div style={{
                   marginBottom: rhythm(2)
                 }}>
