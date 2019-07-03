@@ -1,3 +1,7 @@
 body {
     background-color: #D1ABD1;
 }
+
+hr {
+    width: 8rem
+}

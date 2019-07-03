@@ -40,10 +40,13 @@ class BlogPostTemplate extends React.Component {
           </p>
           <hr
             style={{
-              margin: rhythm(1) + " 0",
+              margin: rhythm(2) + " 0",
             }}
           />
           <Bio />
+          <hr style={{
+            margin: rhythm(2) + " 0"
+          }} />
 
           <ul
             style={{
