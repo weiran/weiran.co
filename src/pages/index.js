@@ -20,6 +20,10 @@ class Index extends React.Component {
         <div>
           <Helmet title={siteTitle} />
           <Bio />
+          <hr style={{
+            marginTop: rhythm(2),
+            marginBottom: rhythm(2)
+          }} />
           {posts.map(({ node }, index) => {
             const title = node.frontmatter.title || node.fields.slug
             return (

@@ -21,7 +21,7 @@ class PageTemplate extends React.Component {
 
           <hr
             style={{
-              marginBottom: rhythm(1),
+              margin: rhythm(2) + " 0",
             }}
           />
           <Bio />

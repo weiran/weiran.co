@@ -14,7 +14,11 @@ typographyTheme.overrideThemeStyles = () => ({
     backgroundColor: "inherit",
   },
   "ul.nav, p.post-meta": {
-    fontFamily: "'Roboto Condensed'"
+    fontFamily: "'Roboto Condensed'",
+    textTransform: "uppercase"
+  },
+  "ul.nav a": {
+    textDecoration: "none"
   }
 })
 
