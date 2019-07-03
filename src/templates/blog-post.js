@@ -22,7 +22,7 @@ class BlogPostTemplate extends React.Component {
           <h1>
             <Title title={post.frontmatter.title} passthroughUrl={post.frontmatter.passthroughUrl} slug={post.slug} />
           </h1>
-          <p
+          <p className="post-meta"
             style={{
               ...scale(-1 / 5),
               display: 'block',

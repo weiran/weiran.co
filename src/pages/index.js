@@ -30,11 +30,11 @@ class Index extends React.Component {
                 }}>
                   <Title title={title} passthroughUrl={node.frontmatter.passthroughUrl} slug={node.fields.slug} />
                 </h2>
-                <p style={{
+                <p className="post-meta" style={{
                   ...scale(-1 / 5),
                   marginBottom: node.frontmatter.passthroughUrl ? rhythm(0) : rhythm(0.75),
                   display: 'block',
-                }}>{node.frontmatter.date.toUpperCase()}</p>
+                }}>{node.frontmatter.date}</p>
                 <div style={{
                   marginBottom: rhythm(2)
                 }}>

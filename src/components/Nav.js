@@ -39,7 +39,7 @@ class Nav extends React.Component {
               margin: "0 " + rhythm(1.5)
             }}>
               <Link to={page.link}>
-                {page.name.toUpperCase()}
+                {page.name}
               </Link>
             </li>
           )}
