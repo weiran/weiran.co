@@ -11,6 +11,8 @@ Projects that I'm currently working on:
 
 ## Old Projects
 
+Projects I've worked on in the past and no longer maintain:
+
 * [Infinite Loop](http://infiniteloopgame.com/) - iOS game. Test your reactions and compete on high scores.
 * [Castr](http://castr.net) - social podcasting node.js app.
 * [NSClippy](https://github.com/weiran/NSClippy) - Clippy, but for your iOS app.
