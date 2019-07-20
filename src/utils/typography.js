@@ -19,6 +19,9 @@ typographyTheme.overrideThemeStyles = () => ({
   },
   "ul.nav a": {
     textDecoration: "none"
+  },
+  "a": {
+    textDecorationSkip: "initial"
   }
 })
 
