@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from "../components/layout"
 import { Link, graphql } from 'gatsby'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 
 import Title from '../components/Title'
 import Bio from '../components/Bio'
