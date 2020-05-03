@@ -5,9 +5,9 @@ type: page
 
 Projects that I'm currently working on: 
 
+* [Hackers](/projects/hackers) - an open source Hacker News app for iOS
+* [Watch It Later](/projects/watch-it-later) - save online videos to watch later on your Apple TV
 * [Drank](http://thedrankapp.com) - drink better
-* [Hackers](https://weiran.co/projects/hackers) - an open source Hacker News app for iOS
-* [Watch It Later](https://weiran.co/projects/watch-it-later) - save online videos to watch later on your Apple TV
 
 ## Old Projects
 
