@@ -2,22 +2,22 @@ import Typography from "typography"
 import typographyTheme from "typography-theme-judah"
 
 typographyTheme.overrideThemeStyles = () => ({
-  "p a, h1 a, h2 a, li a": {
+  "p a, h1 a, h2 a, .nav a": {
     color: "black",
     textDecoration: "underline"
   },
-  "p a:hover, h1 a:hover, h2 a:hover, li a:hover": {
+  "p a:hover, h1 a:hover, h2 a:hover, .nav a:hover": {
     backgroundColor: "#3C455A",
     color: "white"
   },
-  "a.gatsby-resp-image-link:hover, h1 a:hover, ul.nav a:hover": {
+  "a.gatsby-resp-image-link:hover, h1 a:hover, .nav a:hover": {
     backgroundColor: "inherit",
   },
-  "ul.nav, p.post-meta": {
+  ".nav, p.post-meta": {
     fontFamily: "'Roboto Condensed'",
     textTransform: "uppercase"
   },
-  "ul.nav a": {
+  ".nav a": {
     textDecoration: "none"
   },
   "a": {
