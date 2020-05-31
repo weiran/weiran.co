@@ -26,24 +26,22 @@ class Nav extends React.Component {
 
   render() {
     return (
-      <div style={{
-        textAlign: "center",
-        marginBottom: rhythm(1)
+      <div className="nav" style={{
+        display: "flex",
+        flexWrap: "wrap",
+        flexDirection: "row",
+        marginTop: rhythm(2)
       }}>
-        <ul class="nav" style={{
-          margin: 0
-        }}>
-          {this.state.pages.map((page, index) => 
-            <li key={index} style={{
-              display: "inline",
-              margin: "0 " + rhythm(1.5)
-            }}>
-              <Link to={page.link}>
-                {page.name}
-              </Link>
-            </li>
-          )}
-        </ul>
+        {this.state.pages.map((page, index) => 
+          <div key={index} style={{
+            flex: "1 1 auto",
+            margin: "0 " + rhythm(1.5)
+          }}>
+            <Link to={page.link}>
+              {page.name}
+            </Link>
+          </div>
+        )}
       </div>
     )
   }
