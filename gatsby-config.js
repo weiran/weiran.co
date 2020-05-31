@@ -21,7 +21,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
-              backgroundColor: "#D1ABD1",
+              backgroundColor: '#F9C48B',
             },
           },
           {
@@ -64,13 +64,13 @@ module.exports = {
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               return allMarkdownRemark.edges.filter(item => 
-                item.node.frontmatter.type !== "page").map(edge => {
+                item.node.frontmatter.type !== 'page').map(edge => {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
                   url: edge.node.frontmatter.passthroughUrl || site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ "content:encoded": edge.node.html }],
+                  custom_elements: [{ 'content:encoded': edge.node.html }],
                 })
               })
             },
@@ -93,8 +93,8 @@ module.exports = {
                 }
               }
             `,
-            output: "/rss.xml",
-            title: "weiran.co",
+            output: '/rss.xml',
+            title: 'weiran.co',
           },
         ],
       },

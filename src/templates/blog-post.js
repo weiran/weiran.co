@@ -16,13 +16,13 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
 
     return (
-      <Layout location="this.props.location">
+      <Layout location='this.props.location'>
         <div>
           <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
           <h1>
             <Title title={post.frontmatter.title} passthroughUrl={post.frontmatter.passthroughUrl} slug={post.slug} />
           </h1>
-          <p className="post-meta"
+          <p className='post-meta'
             style={{
               ...scale(-1 / 5),
               display: 'block',
@@ -40,12 +40,12 @@ class BlogPostTemplate extends React.Component {
           </p>
           <hr
             style={{
-              margin: rhythm(2) + " 0",
+              margin: rhythm(2) + ' 0',
             }}
           />
           <Bio />
           <hr style={{
-            margin: rhythm(2) + " 0"
+            margin: rhythm(2) + ' 0'
           }} />
 
           <ul
@@ -60,7 +60,7 @@ class BlogPostTemplate extends React.Component {
           >
             {previous && (
               <li>
-                <Link to={previous.fields.slug} rel="prev">
+                <Link to={previous.fields.slug} rel='prev'>
                   ← {previous.frontmatter.title}
                 </Link>
               </li>
@@ -68,7 +68,7 @@ class BlogPostTemplate extends React.Component {
 
             {next && (
               <li>
-                <Link to={next.fields.slug} rel="next">
+                <Link to={next.fields.slug} rel='next'>
                   {next.frontmatter.title} →
                 </Link>
               </li>
