@@ -7,17 +7,17 @@ class Nav extends React.Component {
   constructor(props) {
     super(props)
     const pages = [{
-      name: "Blog",
-      link: "/"
+      name: 'Blog',
+      link: '/'
     }, {
-      name: "About",
-      link: "/about"
+      name: 'About',
+      link: '/about'
     }, {
-      name: "Projects",
-      link: "/projects"
+      name: 'Projects',
+      link: '/projects'
     }, {
-      name: "Contact",
-      link: "/contact"
+      name: 'Contact',
+      link: '/contact'
     }]
     this.state = {
       pages: pages
@@ -26,16 +26,16 @@ class Nav extends React.Component {
 
   render() {
     return (
-      <div className="nav" style={{
-        display: "flex",
-        flexWrap: "wrap",
-        flexDirection: "row",
+      <div className='nav' style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        flexDirection: 'row',
         marginTop: rhythm(2)
       }}>
         {this.state.pages.map((page, index) => 
           <div key={index} style={{
-            flex: "1 1 auto",
-            margin: "0 " + rhythm(1.5)
+            flex: '1 1 auto',
+            margin: '0 ' + rhythm(1.5)
           }}>
             <Link to={page.link}>
               {page.name}
