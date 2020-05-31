@@ -1,6 +1,6 @@
 import React from 'react'
 
-import profilePic from './profile-pic.png'
+import profilePic from './profile-pic.jpeg'
 import typography from '../utils/typography'
 const rhythm = typography.rhythm
 
@@ -22,6 +22,7 @@ class Bio extends React.Component {
             marginBottom: "auto",
             width: rhythm(2),
             height: rhythm(2),
+            borderRadius: "50%"
           }}
         />
         <p style={{
