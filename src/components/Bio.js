@@ -18,11 +18,11 @@ class Bio extends React.Component {
           alt={`Weiran Zhang`}
           style={{
             marginRight: rhythm(1 / 2),
-            marginTop: "auto",
-            marginBottom: "auto",
+            marginTop: 'auto',
+            marginBottom: 'auto',
             width: rhythm(2),
             height: rhythm(2),
-            borderRadius: "50%"
+            borderRadius: '50%'
           }}
         />
         <p style={{
@@ -33,7 +33,7 @@ class Bio extends React.Component {
           building thriving software teams. This blog is a place
           for me to document things I've learned and things I find interesting. 
           {' '}
-          <a href="https://twitter.com/weiran">
+          <a href='https://twitter.com/weiran'>
             You should follow me on Twitter
           </a>
           .
