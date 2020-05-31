@@ -13,7 +13,7 @@ class PageTemplate extends React.Component {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
     return (
-      <Layout location="this.props.location">
+      <Layout location='this.props.location'>
         <div>
           <Helmet title={`${page.frontmatter.title} | ${siteTitle}`} />
           <h1>{page.frontmatter.title}</h1>
@@ -21,7 +21,7 @@ class PageTemplate extends React.Component {
 
           <hr
             style={{
-              margin: rhythm(2) + " 0",
+              margin: rhythm(2) + ' 0',
             }}
           />
           <Bio />
