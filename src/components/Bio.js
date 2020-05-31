@@ -29,7 +29,7 @@ class Bio extends React.Component {
           marginBottom: 0
         }}>
           Hi, I'm <strong>Weiran Zhang</strong>. I work as a Software 
-          Enginnering Manager at Capital One. I have a passion for iOS and
+          Engineering Manager at Capital One. I have a passion for iOS and
           building thriving software teams. This blog is a place
           for me to document things I've learned and things I find interesting. 
           {' '}
