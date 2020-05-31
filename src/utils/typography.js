@@ -2,12 +2,11 @@ import Typography from "typography"
 import typographyTheme from "typography-theme-judah"
 
 typographyTheme.overrideThemeStyles = () => ({
-  "p a, h1 a, h2 a, .nav a": {
+  "p a, h1 a, h2 a, ul a, .nav a": {
     color: "black",
     textDecoration: "underline"
   },
-  "p a:hover, h1 a:hover, h2 a:hover, .nav a:hover": {
-    backgroundColor: "#3C455A",
+  "p a:hover, h1 a:hover, h2 a:hover, ul a:hover, .nav a:hover": {
     color: "white"
   },
   "a.gatsby-resp-image-link:hover, h1 a:hover, .nav a:hover": {
