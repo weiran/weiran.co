@@ -5,3 +5,17 @@ body {
 hr {
     width: 8rem
 }
+
+/* Footnotes */
+
+div.footnotes {
+    margin-top: 4rem
+}
+
+div.footnotes hr {
+    display: none
+}
+
+div.footnotes p:last-of-type {
+    margin-bottom: 0;
+}
