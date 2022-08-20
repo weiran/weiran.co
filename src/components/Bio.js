@@ -28,8 +28,8 @@ class Bio extends React.Component {
         <p style={{
           marginBottom: 0
         }}>
-          Hi, I'm <strong>Weiran Zhang</strong>. I work as a Software 
-          Engineering Manager at Capital One. I have a passion for iOS and
+          Hi, I'm <strong>Weiran Zhang</strong>. I work as a Senior Software 
+          Engineering Manager at Capital One. I have a passion for technology and
           building thriving software teams. This blog is a place
           for me to document things I've learned and things I find interesting. 
           {' '}
