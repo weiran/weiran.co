@@ -28,13 +28,12 @@ class Bio extends React.Component {
         <p style={{
           marginBottom: 0
         }}>
-          Hi, I'm <strong>Weiran Zhang</strong>. I work as a Senior Software 
+          Hi, I'm <strong>Weiran Zhang</strong>. I work as a Senior 
           Engineering Manager at Capital One. I have a passion for technology and
-          building thriving software teams. This blog is a place
-          for me to document things I've learned and things I find interesting. 
+          building thriving software teams. This blog is where I write about things I find interesting.
           {' '}
-          <a href='https://twitter.com/weiran'>
-            You should follow me on Twitter
+          <a rel='me' href='https://mastodon.social/@weiran'>
+            You can follow me on Mastodon
           </a>
           .
         </p>
