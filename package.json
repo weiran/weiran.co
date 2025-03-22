@@ -7,7 +7,7 @@
     "url": "https://github.com/weiran/weiran.co/issues"
   },
   "dependencies": {
-    "gatsby": "^5.4.1",
+    "gatsby": "^5.14.1",
     "gatsby-plugin-feed": "^5.4.0",
     "gatsby-plugin-google-analytics": "^5.4.0",
     "gatsby-plugin-netlify": "^5.1.0",
@@ -33,6 +33,7 @@
     "typography-theme-judah": "^0.16.19"
   },
   "devDependencies": {
+    "ajv": "^8.17.1",
     "eslint": "^8.31.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-react": "^7.32.0",
