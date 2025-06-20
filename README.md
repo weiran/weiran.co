@@ -1,5 +1,5 @@
-# weiran.co
-Repository of the Gatsby website weiran.co.
+# weiranzhang.com
+Repository of the Gatsby website weiranzhang.com.
 
 ## Running in development
 `gatsby develop`

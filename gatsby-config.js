@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'weiran.co',
+    title: 'weiranzhang.com',
     author: 'Weiran Zhang',
-    description: 'Weiran Zhang',
-    siteUrl: 'https://weiran.co',
+    description: 'Weiran Zhang\'s personal website',
+    siteUrl: 'https://weiranzhang.com',
   },
   plugins: [
     {
@@ -94,7 +94,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: 'weiran.co',
+            title: 'weiranzhang.com',
           },
         ],
       },
