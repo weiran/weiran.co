@@ -7,7 +7,7 @@
     "url": "https://github.com/weiran/weiran.co/issues"
   },
   "dependencies": {
-    "gatsby": "^5.14.1",
+    "gatsby": "^5.14.4",
     "gatsby-plugin-feed": "^5.14.0",
     "gatsby-plugin-google-analytics": "^5.14.0",
     "gatsby-plugin-netlify": "^5.1.1",
@@ -36,13 +36,13 @@
     "ajv": "^8.17.1",
     "eslint": "^8.57.1",
     "eslint-config-react-app": "^7.0.1",
-    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "gh-pages": "^6.3.0",
     "prettier": "^3.5.3",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.3"
   },
   "homepage": "https://github.com/weiran/weiran.co#readme",
   "keywords": [
