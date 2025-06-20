@@ -7,7 +7,7 @@
     "url": "https://github.com/weiran/weiran.co/issues"
   },
   "dependencies": {
-    "gatsby": "^5.14.1",
+    "gatsby": "^5.14.4",
     "gatsby-plugin-feed": "^5.14.0",
     "gatsby-plugin-google-analytics": "^5.14.0",
     "gatsby-plugin-netlify": "^5.1.1",
