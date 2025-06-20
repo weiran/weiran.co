@@ -18,14 +18,13 @@ export default class BlogList extends React.Component {
     const { currentPage, numPages } = this.props.pageContext
     const isFirst = currentPage === 1
     const isLast = currentPage === numPages
-    const prevPage = currentPage - 1 === 1 ? '/' : `/blog/${(currentPage - 1)}`
+    const prevPage = currentPage - 1 === 1 ? '/blog' : `/blog/${(currentPage - 1)}`
     const nextPage = `/blog/${(currentPage + 1)}`
 
     return (
       <Layout location={this.props.location}>
         <div>
           <Helmet title={siteTitle} />
-          <Bio />
           <hr style={{
             marginTop: rhythm(2),
             marginBottom: rhythm(2)

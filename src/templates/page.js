@@ -15,13 +15,13 @@ class PageTemplate extends React.Component {
     return (
       <Layout location='this.props.location'>
         <div>
-          <Helmet title={`${page.frontmatter.title} | ${siteTitle}`} />
+          <Helmet title={`${page.frontmatter.title} — ${siteTitle}`} />
           <h1>{page.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: page.html }} />
 
           <hr
             style={{
-              margin: rhythm(2) + ' 0',
+              margin: rhythm(2) + ' auto',
             }}
           />
           <Bio />
