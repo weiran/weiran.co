@@ -1,6 +1,6 @@
 ---
 title: "Hackers 5.0"
-date: "2025-09-15T10:00:00.000Z"
+date: "2025-09-17T10:00:00.000Z"
 ---
 
 I just shipped the biggest update to [Hackers](https://github.com/weiran/Hackers) since 4.0: version 5.0. And unlike previous updates which were mostly about adding features, this one is a complete rewrite from the ground up.
