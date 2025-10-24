@@ -100,7 +100,3 @@ It took me a couple hours to figure this out, but it boils down to a few steps:
 
 ![Tailscale Subnet Routes Screenshot](subnet-routes.png)
 ![Tailscale Nameserver Screenshot](nameserver.png)
-
----
-
-## Et voila
