@@ -3,17 +3,17 @@ title: "Why Did I Create My Own Private Cloud (and Why You Should Too)"
 date: "2025-10-24T10:00:00.000Z"
 ---
 
-One night I opened my laptop to tick off a handful of routine chores: find a recipe, work on my tax return, skim the budget. Five tabs later I’d been logged out twice, upsold on a “new plan,” and nudged to accept fresh data-sharing terms I didn’t ask for. In that soup of prompts it hit me again: I’m renting the everyday parts of my life from companies that can rewrite the deal whenever they want.
+A while back I opened my laptop to tick off a handful of routine chores: find a recipe, work on my tax return, skim the budget, pretty normal day-to-day stuff. Five tabs later I’d been upsold on a “new pro plan,” nudged to accept fresh data-sharing terms I didn’t ask for, and informed that my subscription cost is going up in April by 8%. That's when it hit me that I’m renting the everyday parts of my life from companies that can rewrite the deal whenever they want.
 
-That frustration is what led to self-hosting. I want the convenience of the public web—friendly URLs and access from anywhere, without ceding custody of my data or paying subscription creep forever. A private cloud gave me that mix of control and polish: the services feel public, but they live solely on a network and physical server that I own. The hardware is modest, the power draw tiny, and the result is freedom and control of your own data.
+That frustration is what led to self-hosting. I want the convenience of the public web—friendly URLs and access from anywhere, without ceding custody of my data or paying subscription creep forever. A private cloud gave me that mix of control and polish: the services feel public, but they live solely on a network and physical server that I own. The hardware is modest, the power draw tiny, and the result is freedom and control of your own data, while keeping it off the lecherous gaze of other people.
 
-My first stabs at a “private cloud” fizzled because they were a pain to reach out of my home network. Everything lived on `.local` hostnames, I’d hop onto a VPN, and then watch those names silently fail because mDNS doesn’t cross tunnels and Tailscale quite sensibly refuses to resolve them. The services technically existed, but half the time I had to use random port numbers to differentiate between apps. It finally clicked that I needed to treat my homelab like the public internet—assign real DNS, pick routable names, and make them work identically on Wi-Fi or through a tailnet.
+My first stabs at a “private cloud” fizzled because they were a pain to reach out of my home network. Everything lived on `.local` hostnames, I’d hop onto a VPN, and then watch those names silently fail because mDNS doesn’t cross tunnels and Tailscale quite sensibly refuses to resolve them. Half the time I had to use random port numbers to differentiate between apps. That took the sheen off It finally clicked that I needed to treat my homelab like the public internet—assign real DNS, pick routable names, and make them work identically on Wi-Fi or through a tailnet.
 
-This post is the recipe I ended up with: one set of friendly URLs for my services that works on the sofa and on public Wi-Fi, without exposing anything to the public internet. You’ll type something like `https://bookmarks.home.arpa` and it will just work, whether you’re at home or connected with a VPN.
+This post is the recipe I ended up with: one set of friendly URLs for my services that works on at home and on public Wi-Fi, without dangerously exposing anything to the internet. You’ll type something like `https://bookmarks.home.arpa` and it will just work, whether you’re at home or connected with a VPN.
 
 ---
 
-## The idea in one breath
+## The objective: one name for all
 
 Give everything a real name, let your LAN’s DNS resolve those names to your server, and use a private VPN (Tailscale) so those same names resolve from anywhere you are. A reverse proxy on your server receives the requests and hands them to the right services. To you it feels like the public web; to everyone else it’s invisible.
 
@@ -21,9 +21,9 @@ Give everything a real name, let your LAN’s DNS resolve those names to your se
 
 ## Pick a private home for your names
 
-`.local` sounds cute and is guaranteed to cause trouble because it belongs to mDNS. `home.arpa` is [designated for use in residential home networks](https://datatracker.ietf.org/doc/html/rfc8375) and recommended to avoid leaking your DNS queries to third parties.
+`.local` sounds cute and I used it for years, but it is guaranteed to cause trouble because it belongs to mDNS. `home.arpa` is [designated for use in residential home networks](https://datatracker.ietf.org/doc/html/rfc8375) and recommended to avoid leaking your DNS queries to third parties.
 
-On the network side you need a DNS server. That sounds hard but [Pi-hole](https://pi-hole.net) does a fine job of being a DNS server, and you probably have it filtering ads anyway. The trick is to make Pi-hole *authoritative* for your private suffix so it answers from home instead of asking the wider world.
+On the network side you need a DNS server. That sounds hard but [Pi-hole](https://pi-hole.net) does a fine job of being a DNS server, and you probably already have it blocks ads anyway. The trick is to make Pi-hole *authoritative* for your private suffix so it answers from home instead of asking the wider world.
 
 Two lines do the heavy lifting:
 
@@ -84,26 +84,24 @@ To your browser it feels indistinguishable from a public website. To the interne
 
 ---
 
-## A few practical notes that will save you time
+## Putting it together
 
-If something refuses to resolve and you’re sure the Pi-hole file is right, it’s almost always one of two things: the v6 “load additional configs” toggle isn’t enabled, or the device you’re testing from isn’t using Pi-hole for DNS yet. Fix the toggle and make sure your router’s DHCP hands out Pi-hole as the DNS server, then renew your device’s lease.
-
-Avoid binding anything to port **5353**; that’s mDNS. If you later experiment with a sidecar resolver like CoreDNS, put it on a quiet port like **5453** and only point specific tools at it. For the baseline setup you don’t need CoreDNS at all—Pi-hole being authoritative keeps the system simple and resilient.
-
-If you care about cleanliness, give each service a tidy hostname and let the proxy do the rest. It’s much easier to say “go to `budget.home.arpa`” than “open the app on port 3605.” And if you share the setup with someone else, there’s less magic to memorize.
-
----
-
-## Putting it together, quickly
-
-Here’s a sketch of the moving parts so you can copy the pattern:
+It took me a couple hours to figure this out, but it boils down to a few steps:
 
 1. Choose a private suffix like `home.arpa`.  
 2. In Pi-hole v6, enable loading `/etc/dnsmasq.d`, then add:
    ```ini
    local=/home.arpa/
-   address=/home.arpa/192.168.1.100
+   address=/home.arpa/192.168.1.100 # Your server's IP
    ```
    Restart Pi-hole and make sure your router’s DHCP points clients at it.
-3. Configure the reverse proxy so `bookmarks.home.arpa` routes to your bookmarker, `budget.home.nas` to your budgeting app, and so on.
+3. Configure the reverse proxy so `bookmarks.home.arpa` routes to your bookmarker, `budget.home.nas` to your budgeting app, and so on. I just used the included reverse proxy with Synology.
 4. Install Tailscale on the NAS, advertise the `192.168.1.0/24` route, approve it, and add a restricted nameserver mapping `home.arpa` to the Pi-hole IP. Connect your devices to your tailnet.
+
+![Tailscale Subnet Routes Screenshot](subnet-routes.png)
+![Tailscale Nameserver Screenshot](nameserver.png)
+
+---
+
+## Et voila
+
