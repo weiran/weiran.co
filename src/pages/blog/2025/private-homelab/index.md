@@ -1,5 +1,5 @@
 ---
-title: "Why Did I Create My Own Private Cloud (and Why You Should Too)"
+title: "How I Made My Private Homelab Feel Public with Pi-Hole"
 date: "2025-10-24T10:00:00.000Z"
 ---
 
@@ -104,4 +104,3 @@ It took me a couple hours to figure this out, but it boils down to a few steps:
 ---
 
 ## Et voila
-
