@@ -9,7 +9,6 @@ const title = frontmatter?.title ?? 'Page'
 <BaseLayout title={title}>
   <h1>{title}</h1>
   <slot />
-  <hr style="margin: 4rem 0" />
+  <hr class="divider divider--lg" />
   <Bio />
 </BaseLayout>
-

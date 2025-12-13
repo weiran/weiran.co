@@ -1,0 +1,84 @@
+.site-header,
+.site-main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40rem;
+  padding: 2.5rem 1.25rem;
+}
+
+.site-header {
+  padding-bottom: 0.8333333rem;
+}
+
+.site-title {
+  margin-top: 0;
+  text-align: center;
+}
+
+.site-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.divider {
+  width: 8rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.divider--lg {
+  margin: 4rem 0;
+}
+
+.divider--xl {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.divider--post {
+  margin-top: 4rem;
+}
+
+.post-preview-body {
+  margin-bottom: 4rem;
+}
+
+.post-excerpt {
+  margin-bottom: 1rem;
+}
+
+.post-title {
+  margin-bottom: 0.5rem;
+  font-size: 1.618rem;
+}
+
+.post-title--link {
+  font-size: 1.21225rem;
+}
+
+.post-meta {
+  display: block;
+}
+
+.post-meta--link {
+  margin-bottom: 0;
+}
+
+.post-meta--list {
+  margin-bottom: 1.25rem;
+}
+
+.post-meta--post {
+  margin-bottom: 2rem;
+  margin-top: -1rem;
+}
+
+.pager {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin-left: 0;
+}

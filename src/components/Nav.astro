@@ -1,16 +1,15 @@
 ---
-const pages = [
-  { name: 'Blog', link: '/' },
-  { name: 'About', link: '/about' },
-  { name: 'Projects', link: '/projects' },
-  { name: 'Contact', link: '/contact' },
-]
+import { site } from '../config/site'
+
+const pathname = Astro.url.pathname.replace(/\/$/, '') || '/'
 ---
 
 <nav class="nav">
-  {pages.map((page) => (
+  {site.nav.map((page) => (
     <div class="nav-item">
-      <a href={page.link}>{page.name}</a>
+      <a href={page.href} aria-current={pathname === page.href ? 'page' : undefined}>
+        {page.name}
+      </a>
     </div>
   ))}
 </nav>
@@ -26,5 +25,9 @@ const pages = [
   .nav-item {
     flex: 1 1 auto;
     margin: 0 2.8125rem;
+  }
+
+  a[aria-current='page'] {
+    text-decoration: underline;
   }
 </style>

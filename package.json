@@ -7,23 +7,26 @@
     "url": "https://github.com/weiran/weiran.co/issues"
   },
   "dependencies": {
+    "@astrojs/rss": "^4.0.1",
+    "@astrojs/sitemap": "^3.6.0",
     "@fontsource/roboto-condensed": "^5.2.7",
     "@fontsource/vollkorn": "^5.2.7",
-    "@astrojs/rss": "^4.0.1",
     "astro": "^5.16.0",
     "remark-gfm": "^4.0.1",
     "remark-smartypants": "^3.0.2"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.6",
     "gh-pages": "^6.3.0",
     "prettier": "^3.5.3",
+    "prettier-plugin-astro": "^0.14.0",
     "typescript": "^5.8.3"
   },
   "homepage": "https://github.com/weiran/weiran.co#readme",
   "keywords": [
-    "gatsby"
+    "astro"
   ],
-  "license": "UNLICENSED",
+  "license": "MIT",
   "private": true,
   "main": "n/a",
   "repository": {
@@ -34,7 +37,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "deploy": "astro build && gh-pages -d dist",
+    "check": "astro check",
+    "deploy": "npm run deploy:gh-pages",
+    "deploy:gh-pages": "astro build && gh-pages -d dist",
     "format": "prettier --write ."
   }
 }

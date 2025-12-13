@@ -1,0 +1,33 @@
+---
+type Props = {
+  ga4Id?: string
+}
+
+const ga4Id = Astro.props.ga4Id ?? import.meta.env.PUBLIC_GA4_ID
+---
+
+{ga4Id ? (
+  <script is:inline>
+    {String.raw`
+      const dnt =
+        navigator.doNotTrack === '1' ||
+        window.doNotTrack === '1' ||
+        navigator.msDoNotTrack === '1'
+
+      if (!dnt) {
+        const s = document.createElement('script')
+        s.async = true
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=${ga4Id}'
+        document.head.appendChild(s)
+
+        window.dataLayer = window.dataLayer || []
+        function gtag() {
+          dataLayer.push(arguments)
+        }
+        gtag('js', new Date())
+        gtag('config', '${ga4Id}', { anonymize_ip: true })
+      }
+    `}
+  </script>
+) : null}
+

@@ -1,24 +1,37 @@
 ---
 import '../styles/global.css'
+import '../styles/site.css'
 import Nav from '../components/Nav.astro'
+import Analytics from '../components/Analytics.astro'
+import { site } from '../config/site'
 
 type Props = {
   title?: string
   description?: string
+  pageType?: 'website' | 'article'
 }
 
-const { title, description } = Astro.props
-const siteTitle = 'weiranzhang.com'
-const pageTitle = title ? `${title} | ${siteTitle}` : siteTitle
+const { title, description, pageType = 'website' } = Astro.props
+const pageTitle = title ? `${title} | ${site.title}` : site.title
+const metaDescription = description ?? site.description
+const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).toString() : Astro.url.toString()
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={site.locale}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
-    {description ? <meta name="description" content={description} /> : null}
+    <meta name="description" content={metaDescription} />
+    <link rel="canonical" href={canonical} />
+
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={metaDescription} />
+    <meta property="og:type" content={pageType} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content={site.title} />
+    <meta name="twitter:card" content="summary" />
 
     <link rel="icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -31,62 +44,19 @@ const pageTitle = title ? `${title} | ${siteTitle}` : siteTitle
     <meta name="msapplication-TileImage" content="/mstile-150x150.png" />
     <meta name="theme-color" content="#F9C48B" />
 
-    <script is:inline>
-      const dnt =
-        navigator.doNotTrack === '1' ||
-        window.doNotTrack === '1' ||
-        navigator.msDoNotTrack === '1'
-
-      if (!dnt) {
-        const s = document.createElement('script')
-        s.async = true
-        s.src = 'https://www.googletagmanager.com/gtag/js?id=UA-119965457-1'
-        document.head.appendChild(s)
-
-        window.dataLayer = window.dataLayer || []
-        function gtag() {
-          dataLayer.push(arguments)
-        }
-        gtag('js', new Date())
-        gtag('config', 'UA-119965457-1', { anonymize_ip: true })
-      }
-    </script>
+    <Analytics />
   </head>
   <body>
-    <header class="header">
-      <h3>
+    <header class="site-header">
+      <h3 class="site-title">
         <a href="/">
-          ⌘<br />{siteTitle}
+          ⌘<br />{site.title}
         </a>
       </h3>
       <Nav />
     </header>
-    <main class="main">
+    <main class="site-main">
       <slot />
     </main>
   </body>
 </html>
-
-<style>
-  .header,
-  .main {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 40rem;
-    padding: 2.5rem 1.25rem;
-  }
-
-  .header {
-    padding-bottom: 0.8333333rem;
-  }
-
-  h3 {
-    margin-top: 0;
-    text-align: center;
-  }
-
-  h3 a {
-    text-decoration: none;
-    color: inherit;
-  }
-</style>

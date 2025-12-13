@@ -1,178 +1,81 @@
 ---
-import { getCollection, getEntryBySlug } from 'astro:content'
+import { getCollection } from 'astro:content'
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import Bio from '../../components/Bio.astro'
 import TitleLink from '../../components/TitleLink.astro'
-
-const postsPerPage = 12
-
-const allPosts = (await getCollection('blog'))
-  .filter((p) => p.data.type !== 'page')
-  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-
-const numPages = Math.ceil(allPosts.length / postsPerPage)
+import { formatDate } from '../../lib/text'
 
 export async function getStaticPaths() {
-  const postsPerPage = 12
   const posts = (await getCollection('blog'))
-    .filter((p) => p.data.type !== 'page')
+    .filter((p) => p.data.type !== 'page' && !p.data.draft)
     .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
 
-  const pages = Array.from({ length: Math.max(0, Math.ceil(posts.length / postsPerPage) - 1) }).map((_, i) => ({
-    params: { slug: String(i + 2) },
+  return posts.map((post) => ({
+    params: { slug: post.slug },
   }))
-
-  return [...pages, ...posts.map((post) => ({ params: { slug: post.slug } }))]
 }
 
 const slug = Astro.params.slug
-const isPagination = /^[0-9]+$/.test(slug)
-
-const formatDate = (date) =>
-  new Intl.DateTimeFormat('en-GB', {
-    day: '2-digit',
-    month: 'long',
-    year: 'numeric',
-  }).format(date)
-
-const excerpt = (markdown) => {
-  const firstParagraph = markdown
-    .trim()
-    .split(/\n\s*\n/)
-    .find((p) => p.trim().length > 0)
-  if (!firstParagraph) return ''
-  return firstParagraph
-    .replace(/!\[[^\]]*\]\([^)]+\)/g, '')
-    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
-    .replace(/[`*_>#]/g, '')
-    .trim()
+if (!slug) {
+  throw new Error('Missing slug param')
 }
 
-let mode = 'post'
-let pagePosts = []
-let currentPage = 1
-let isFirst = true
-let isLast = true
-let prevPage = '/'
-let nextPage = '/blog/2'
+const posts = (await getCollection('blog'))
+  .filter((p) => p.data.type !== 'page' && !p.data.draft)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
 
-let entry = null
-let Content = null
-let previous = null
-let next = null
-
-if (isPagination) {
-  mode = 'pagination'
-  currentPage = Number(slug)
-  const clamped = Number.isFinite(currentPage) ? Math.min(Math.max(currentPage, 2), numPages) : 2
-  currentPage = clamped
-  const start = (currentPage - 1) * postsPerPage
-  pagePosts = allPosts.slice(start, start + postsPerPage)
-
-  isFirst = currentPage === 1
-  isLast = currentPage === numPages
-  prevPage = currentPage - 1 === 1 ? '/' : `/blog/${currentPage - 1}`
-  nextPage = `/blog/${currentPage + 1}`
-} else {
-  entry = await getEntryBySlug('blog', slug)
-  if (!entry) {
-    mode = 'notfound'
-  } else {
-    const index = allPosts.findIndex((p) => p.slug === slug)
-    previous = index >= 0 ? allPosts[index + 1] : null
-    next = index > 0 ? allPosts[index - 1] : null
-    ;({ Content } = await entry.render())
-  }
+const entry = posts.find((p) => p.slug === slug)
+if (!entry) {
+  throw new Error(`Blog post not found: ${slug}`)
 }
+
+const index = posts.findIndex((p) => p.slug === slug)
+const previous = index >= 0 ? posts[index + 1] : null
+const next = index > 0 ? posts[index - 1] : null
+const { Content } = await entry.render()
 ---
 
-{mode === 'pagination' ? (
-  <BaseLayout>
-    <Bio />
-    <hr style="margin-top: 4rem; margin-bottom: 4rem" />
+<BaseLayout
+  title={entry.data.title}
+  description={entry.data.description}
+  pageType="article"
+>
+  <h1>
+    <TitleLink
+      title={entry.data.title}
+      passthroughUrl={entry.data.passthroughUrl}
+      slug={entry.slug}
+    />
+  </h1>
+  <p class="post-meta post-meta--post">{formatDate(entry.data.date)}</p>
+  <Content />
+  <p>
+    <a href="/">⌘</a>
+  </p>
 
-    {pagePosts.map((post) => (
-      <article>
-        <h2 style={`margin-bottom: 0.5rem; font-size: ${post.data.passthroughUrl ? '1.21225rem' : '1.618rem'}`}>
-          <TitleLink title={post.data.title} passthroughUrl={post.data.passthroughUrl} slug={post.slug} />
-        </h2>
-        <p class="post-meta" style={`margin-bottom: ${post.data.passthroughUrl ? '0' : '1.25rem'}; display: block;`}>
-          {formatDate(post.data.date)}
-        </p>
-        <div style="margin-bottom: 4rem">
-          <p style="margin-bottom: 1rem">{excerpt(post.body)}</p>
-          <p>
-            <a href={`/blog/${post.slug}`}>⌘</a>
-          </p>
-          <hr style="margin-top: 4rem" />
-        </div>
-      </article>
-    ))}
+  <hr class="divider divider--lg" />
+  <Bio />
+  <hr class="divider divider--lg" />
 
-    <ul
-      style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;list-style:none;padding:0"
-    >
-      {!isFirst ? (
-        <li>
-          <a href={prevPage} rel="prev">
-            ← Previous Page
-          </a>
-        </li>
-      ) : (
-        <li></li>
-      )}
-      {!isLast ? (
-        <li>
-          <a href={nextPage} rel="next">
-            Next Page →
-          </a>
-        </li>
-      ) : (
-        <li></li>
-      )}
-    </ul>
-  </BaseLayout>
-) : mode === 'notfound' ? (
-  <BaseLayout title="Not Found">
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&apos;t exist... the sadness.</p>
-  </BaseLayout>
-) : (
-  <BaseLayout title={entry.data.title}>
-    <h1>
-      <TitleLink title={entry.data.title} passthroughUrl={entry.data.passthroughUrl} slug={entry.slug} />
-    </h1>
-    <p class="post-meta" style="display:block;margin-bottom:2rem;margin-top:-1rem">
-      {formatDate(entry.data.date)}
-    </p>
-    <Content />
-    <p>
-      <a href="/">⌘</a>
-    </p>
-    <hr style="margin: 4rem 0" />
-    <Bio />
-    <hr style="margin: 4rem 0" />
+  <ul class="pager pager--posts">
+    {previous ? (
+      <li>
+        <a href={`/blog/${previous.slug}`} rel="prev">
+          ← {previous.data.title}
+        </a>
+      </li>
+    ) : (
+      <li></li>
+    )}
 
-    <ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0;margin-left:0">
-      {previous ? (
-        <li>
-          <a href={`/blog/${previous.slug}`} rel="prev">
-            ← {previous.data.title}
-          </a>
-        </li>
-      ) : (
-        <li></li>
-      )}
-
-      {next ? (
-        <li>
-          <a href={`/blog/${next.slug}`} rel="next">
-            {next.data.title} →
-          </a>
-        </li>
-      ) : (
-        <li></li>
-      )}
-    </ul>
-  </BaseLayout>
-)}
+    {next ? (
+      <li>
+        <a href={`/blog/${next.slug}`} rel="next">
+          {next.data.title} →
+        </a>
+      </li>
+    ) : (
+      <li></li>
+    )}
+  </ul>
+</BaseLayout>

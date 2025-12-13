@@ -1,10 +1,11 @@
 ---
+import { Image } from 'astro:assets'
 import profilePic from './profile-pic.jpeg'
 ---
 
 <div class="bio">
-  <img
-    src={profilePic.src}
+  <Image
+    src={profilePic}
     alt="Weiran Zhang"
     width={80}
     height={80}
@@ -34,4 +35,3 @@ import profilePic from './profile-pic.jpeg'
     margin: 0;
   }
 </style>
-

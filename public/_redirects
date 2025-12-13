@@ -1,1 +1,4 @@
 /hackers    /projects/hackers	301
+^/blog/([0-9]+)$ /blog/page/%1 301
+^/blog/page/1$ / 301
+/blog / 301

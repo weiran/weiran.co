@@ -3,66 +3,46 @@ import { getCollection } from 'astro:content'
 import BaseLayout from '../layouts/BaseLayout.astro'
 import Bio from '../components/Bio.astro'
 import TitleLink from '../components/TitleLink.astro'
+import { site } from '../config/site'
+import { excerpt, formatDate } from '../lib/text'
 
 const postsPerPage = 12
 
 const posts = (await getCollection('blog'))
-  .filter((p) => p.data.type !== 'page')
+  .filter((p) => p.data.type !== 'page' && !p.data.draft)
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
 
 const pagePosts = posts.slice(0, postsPerPage)
 const numPages = Math.ceil(posts.length / postsPerPage)
-
-const formatDate = (date) =>
-  new Intl.DateTimeFormat('en-GB', {
-    day: '2-digit',
-    month: 'long',
-    year: 'numeric',
-  }).format(date)
-
-const excerpt = (markdown) => {
-  const firstParagraph = markdown
-    .trim()
-    .split(/\n\s*\n/)
-    .find((p) => p.trim().length > 0)
-  if (!firstParagraph) return ''
-  return firstParagraph
-    .replace(/!\[[^\]]*\]\([^)]+\)/g, '')
-    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
-    .replace(/[`*_>#]/g, '')
-    .trim()
-}
 ---
 
-<BaseLayout description="Weiran Zhang's personal website">
+<BaseLayout description={site.description}>
   <Bio />
-  <hr style="margin-top: 4rem; margin-bottom: 4rem" />
+  <hr class="divider divider--xl" />
 
   {pagePosts.map((post) => (
-    <article>
-      <h2 style={`margin-bottom: 0.5rem; font-size: ${post.data.passthroughUrl ? '1.21225rem' : '1.618rem'}`}>
+    <article class="post-preview">
+      <h2 class:list={['post-title', post.data.passthroughUrl ? 'post-title--link' : null]}>
         <TitleLink title={post.data.title} passthroughUrl={post.data.passthroughUrl} slug={post.slug} />
       </h2>
-      <p class="post-meta" style={`margin-bottom: ${post.data.passthroughUrl ? '0' : '1.25rem'}; display: block;`}>
+      <p class:list={['post-meta', post.data.passthroughUrl ? 'post-meta--link' : 'post-meta--list']}>
         {formatDate(post.data.date)}
       </p>
-      <div style="margin-bottom: 4rem">
-        <p style="margin-bottom: 1rem">{excerpt(post.body)}</p>
+      <div class="post-preview-body">
+        <p class="post-excerpt">{excerpt(post.body)}</p>
         <p>
           <a href={`/blog/${post.slug}`}>⌘</a>
         </p>
-        <hr style="margin-top: 4rem" />
+        <hr class="divider divider--xl divider--post" />
       </div>
     </article>
   ))}
 
   {numPages > 1 ? (
-    <ul
-      style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;list-style:none;padding:0"
-    >
+    <ul class="pager">
       <li></li>
       <li>
-        <a href="/blog/2" rel="next">
+        <a href="/blog/page/2" rel="next">
           Next Page →
         </a>
       </li>

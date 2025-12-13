@@ -1,0 +1,83 @@
+---
+import { getCollection } from 'astro:content'
+import BaseLayout from '../../../layouts/BaseLayout.astro'
+import Bio from '../../../components/Bio.astro'
+import TitleLink from '../../../components/TitleLink.astro'
+import { excerpt, formatDate } from '../../../lib/text'
+
+export async function getStaticPaths() {
+  const postsPerPage = 12
+  const posts = (await getCollection('blog'))
+    .filter((p) => p.data.type !== 'page' && !p.data.draft)
+    .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+
+  const numPages = Math.ceil(posts.length / postsPerPage)
+
+  return Array.from({ length: Math.max(0, numPages - 1) }).map((_, i) => ({
+    params: { page: String(i + 2) },
+  }))
+}
+
+const page = Astro.params.page
+if (!page) {
+  throw new Error('Missing page param')
+}
+const currentPage = Number(page)
+const postsPerPage = 12
+const allPosts = (await getCollection('blog'))
+  .filter((p) => p.data.type !== 'page' && !p.data.draft)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+
+const numPages = Math.ceil(allPosts.length / postsPerPage)
+const start = (currentPage - 1) * postsPerPage
+const pagePosts = allPosts.slice(start, start + postsPerPage)
+
+const isFirst = currentPage === 2
+const isLast = currentPage === numPages
+const prevPage = isFirst ? '/' : `/blog/page/${currentPage - 1}`
+const nextPage = `/blog/page/${currentPage + 1}`
+---
+
+<BaseLayout title={`Blog (Page ${currentPage})`}>
+  <Bio />
+  <hr class="divider divider--xl" />
+
+  {pagePosts.map((post) => (
+    <article class="post-preview">
+      <h2 class:list={['post-title', post.data.passthroughUrl ? 'post-title--link' : null]}>
+        <TitleLink title={post.data.title} passthroughUrl={post.data.passthroughUrl} slug={post.slug} />
+      </h2>
+      <p class:list={['post-meta', post.data.passthroughUrl ? 'post-meta--link' : 'post-meta--list']}>
+        {formatDate(post.data.date)}
+      </p>
+      <div class="post-preview-body">
+        <p class="post-excerpt">{excerpt(post.body)}</p>
+        <p>
+          <a href={`/blog/${post.slug}`}>⌘</a>
+        </p>
+        <hr class="divider divider--xl divider--post" />
+      </div>
+    </article>
+  ))}
+
+  <ul class="pager">
+    {!isFirst ? (
+      <li>
+        <a href={prevPage} rel="prev">
+          ← Previous Page
+        </a>
+      </li>
+    ) : (
+      <li></li>
+    )}
+    {!isLast ? (
+      <li>
+        <a href={nextPage} rel="next">
+          Next Page →
+        </a>
+      </li>
+    ) : (
+      <li></li>
+    )}
+  </ul>
+</BaseLayout>
