@@ -1,5 +1,6 @@
 ---
 title: Infinite Loop Privacy Policy
+layout: ../../../layouts/MarkdownPageLayout.astro
 type: page
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: About
+layout: ../../layouts/MarkdownPageLayout.astro
 type: page
 ---
 

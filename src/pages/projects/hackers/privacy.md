@@ -1,5 +1,6 @@
 ---
 title: Hackers Privacy Policy
+layout: ../../../layouts/MarkdownPageLayout.astro
 type: page
 ---
 

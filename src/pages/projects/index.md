@@ -1,5 +1,6 @@
 ---
 title: Projects
+layout: ../../layouts/MarkdownPageLayout.astro
 type: page
 ---
 

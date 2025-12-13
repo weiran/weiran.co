@@ -1,0 +1,71 @@
+---
+import { getCollection } from 'astro:content'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import Bio from '../components/Bio.astro'
+import TitleLink from '../components/TitleLink.astro'
+
+const postsPerPage = 12
+
+const posts = (await getCollection('blog'))
+  .filter((p) => p.data.type !== 'page')
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+
+const pagePosts = posts.slice(0, postsPerPage)
+const numPages = Math.ceil(posts.length / postsPerPage)
+
+const formatDate = (date) =>
+  new Intl.DateTimeFormat('en-GB', {
+    day: '2-digit',
+    month: 'long',
+    year: 'numeric',
+  }).format(date)
+
+const excerpt = (markdown) => {
+  const firstParagraph = markdown
+    .trim()
+    .split(/\n\s*\n/)
+    .find((p) => p.trim().length > 0)
+  if (!firstParagraph) return ''
+  return firstParagraph
+    .replace(/!\[[^\]]*\]\([^)]+\)/g, '')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/[`*_>#]/g, '')
+    .trim()
+}
+---
+
+<BaseLayout description="Weiran Zhang's personal website">
+  <Bio />
+  <hr style="margin-top: 4rem; margin-bottom: 4rem" />
+
+  {pagePosts.map((post) => (
+    <article>
+      <h2 style={`margin-bottom: 0.5rem; font-size: ${post.data.passthroughUrl ? '1.21225rem' : '1.618rem'}`}>
+        <TitleLink title={post.data.title} passthroughUrl={post.data.passthroughUrl} slug={post.slug} />
+      </h2>
+      <p class="post-meta" style={`margin-bottom: ${post.data.passthroughUrl ? '0' : '1.25rem'}; display: block;`}>
+        {formatDate(post.data.date)}
+      </p>
+      <div style="margin-bottom: 4rem">
+        <p style="margin-bottom: 1rem">{excerpt(post.body)}</p>
+        <p>
+          <a href={`/blog/${post.slug}`}>⌘</a>
+        </p>
+        <hr style="margin-top: 4rem" />
+      </div>
+    </article>
+  ))}
+
+  {numPages > 1 ? (
+    <ul
+      style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;list-style:none;padding:0"
+    >
+      <li></li>
+      <li>
+        <a href="/blog/2" rel="next">
+          Next Page →
+        </a>
+      </li>
+    </ul>
+  ) : null}
+</BaseLayout>

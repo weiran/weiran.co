@@ -1,0 +1,37 @@
+---
+import profilePic from './profile-pic.jpeg'
+---
+
+<div class="bio">
+  <img
+    src={profilePic.src}
+    alt="Weiran Zhang"
+    width={80}
+    height={80}
+    loading="lazy"
+    decoding="async"
+  />
+  <p>
+    Hi, I'm <strong>Weiran Zhang</strong>. I'm passionate about technology and building thriving
+    software teams. This blog is where I write about things I find interesting.
+    <a rel="me" href="https://mastodon.social/@weiran">You can follow me on Mastodon</a>.
+  </p>
+</div>
+
+<style>
+  .bio {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    align-items: center;
+  }
+
+  img {
+    border-radius: 50%;
+  }
+
+  p {
+    margin: 0;
+  }
+</style>
+

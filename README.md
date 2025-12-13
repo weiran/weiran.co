@@ -1,8 +1,8 @@
 # weiranzhang.com
-Repository of the Gatsby website weiranzhang.com.
+Repository of the Astro website weiranzhang.com.
 
 ## Running in development
-`gatsby develop`
+`npm run dev`
 
 ## Credits
-* [Gatsby Starter Blog](https://github.com/gatsbyjs/gatsby-starter-blog)
+* Originally based on [Gatsby Starter Blog](https://github.com/gatsbyjs/gatsby-starter-blog)

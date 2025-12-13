@@ -1,0 +1,30 @@
+---
+const pages = [
+  { name: 'Blog', link: '/' },
+  { name: 'About', link: '/about' },
+  { name: 'Projects', link: '/projects' },
+  { name: 'Contact', link: '/contact' },
+]
+---
+
+<nav class="nav">
+  {pages.map((page) => (
+    <div class="nav-item">
+      <a href={page.link}>{page.name}</a>
+    </div>
+  ))}
+</nav>
+
+<style>
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 3.75rem;
+  }
+
+  .nav-item {
+    flex: 1 1 auto;
+    margin: 0 2.8125rem;
+  }
+</style>

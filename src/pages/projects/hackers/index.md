@@ -1,9 +1,10 @@
 ---
 title: Hackers for Hacker News
+layout: ../../../layouts/MarkdownPageLayout.astro
 type: page
 ---
 
-![Hackers icon](hackersicon.png)
+![Hackers icon](_hackersicon.png)
 <br/>
 ### Hackers is a **free** and **open source** Hacker News app for **iPhone** and **iPad**.
 <br/>
@@ -18,4 +19,4 @@ Each post has a generated thumbnail.
 
 Built for speed.
 
-[![Download on the App Store](appstore.png)](https://apps.apple.com/gb/app/hackers-for-hacker-news/id603503901)
+[![Download on the App Store](_appstore.png)](https://apps.apple.com/gb/app/hackers-for-hacker-news/id603503901)

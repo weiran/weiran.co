@@ -1,0 +1,15 @@
+---
+import BaseLayout from './BaseLayout.astro'
+import Bio from '../components/Bio.astro'
+
+const { frontmatter } = Astro.props
+const title = frontmatter?.title ?? 'Page'
+---
+
+<BaseLayout title={title}>
+  <h1>{title}</h1>
+  <slot />
+  <hr style="margin: 4rem 0" />
+  <Bio />
+</BaseLayout>
+

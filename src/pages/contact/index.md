@@ -1,5 +1,6 @@
 ---
 title: Contact
+layout: ../../layouts/MarkdownPageLayout.astro
 type: page
 ---
 

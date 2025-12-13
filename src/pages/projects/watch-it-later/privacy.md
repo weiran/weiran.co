@@ -1,5 +1,6 @@
 ---
 title: Watch It Later Privacy Policy
+layout: ../../../layouts/MarkdownPageLayout.astro
 type: page
 ---
 
