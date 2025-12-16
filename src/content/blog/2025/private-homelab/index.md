@@ -3,27 +3,38 @@ title: "How I Made My Private Homelab Feel Public with Tailscale and Pi-Hole"
 date: "2025-10-24T10:00:00.000Z"
 ---
 
-A while back I opened my laptop to tick off a handful of routine chores: find a recipe, work on my tax return, skim the budget, pretty normal day-to-day stuff. Five tabs later I’d been upsold on a “new pro plan,” nudged to accept fresh data-sharing terms I didn’t ask for, and informed that my subscription cost is going up in April by 8%. That's when it hit me that I’m renting the everyday parts of my life from companies that can rewrite the deal whenever they want.
+I was doing regular life-admin stuff—recipe, taxes, checking a budget—and somehow ended up clicking through yet another “new plan,” “updated terms,” and “price increase next April” banner. Nothing catastrophic. Just the slow drip of realizing I’m renting a bunch of everyday tools from companies that can change the deal whenever they feel like it.
 
-That frustration is what led to self-hosting. I want the convenience of the public web—friendly URLs and access from anywhere, without ceding custody of my data or paying subscription creep forever. A private cloud gave me that mix of control and polish: the services feel public, but they live solely on a network and physical server that I own. The hardware is modest, the power draw tiny, and the result is freedom and control of your own data, while keeping it off the lecherous gaze of other people.
+That annoyance pushed me further into self-hosting. I want the convenience of the public web—nice URLs, works on any device, accessible from anywhere—without handing my data (and my routines) over to someone else’s servers.
 
-My first stabs at a “private cloud” fizzled because they were a pain to reach out of my home network. Everything lived on `.local` hostnames, I’d hop onto a VPN, and then watch those names silently fail because mDNS doesn’t cross tunnels and Tailscale quite sensibly refuses to resolve them. Half the time I had to use random port numbers to differentiate between apps. That took the sheen off It finally clicked that I needed to treat my homelab like the public internet—assign real DNS, pick routable names, and make them work identically on Wi-Fi or through a tailnet.
+What made it feel “unfinished” was access. Inside my house everything was `something.local` and `http://nas:12345`. The second I left the LAN, I’d connect to Tailscale and… those names would just stop resolving. (mDNS doesn’t cross tunnels, and Tailscale is right not to pretend it does.) I ended up keeping a Notes doc full of ports and IPs, which is a good way to never use your homelab.
 
-This post is the recipe I ended up with: one set of friendly URLs for my services that works on at home and on public Wi-Fi, without dangerously exposing anything to the internet. You’ll type something like `https://bookmarks.home.arpa` and it will just work, whether you’re at home or connected with a VPN.
+The fix was to treat my private network like a tiny version of the public internet: pick a real DNS suffix, make DNS work both at home and on my tailnet, and put a reverse proxy in front so everything has a stable URL.
 
----
-
-## The objective: one name for all
-
-Give everything a real name, let your LAN’s DNS resolve those names to your server, and use a private VPN (Tailscale) so those same names resolve from anywhere you are. A reverse proxy on your server receives the requests and hands them to the right services. To you it feels like the public web; to everyone else it’s invisible.
+This is the setup I landed on: one set of friendly URLs that works on my home Wi‑Fi and on public Wi‑Fi, without exposing anything to the public internet. I can type `http://bookmarks.home.arpa` and it works the same way everywhere (direct on LAN, or via Tailscale when I’m away).
 
 ---
 
-## Pick a private home for your names
+## One name, everywhere
 
-`.local` sounds cute and I used it for years, but it is guaranteed to cause trouble because it belongs to mDNS. `home.arpa` is [designated for use in residential home networks](https://datatracker.ietf.org/doc/html/rfc8375) and recommended to avoid leaking your DNS queries to third parties.
+The idea is simple:
 
-On the network side you need a DNS server. That sounds hard but [Pi-hole](https://pi-hole.net) does a fine job of being a DNS server, and you probably already have it blocks ads anyway. The trick is to make Pi-hole *authoritative* for your private suffix so it answers from home instead of asking the wider world.
+- Give everything a real name.
+- Have your home DNS resolve those names to your server.
+- Tell Tailscale to use that same DNS when you’re away.
+- Let a reverse proxy route traffic to the right app.
+
+To you it feels “public.” To everyone else it’s invisible.
+
+---
+
+## Pick a DNS suffix that won’t fight you
+
+`.local` is the trap. It belongs to mDNS, which is why it behaves inconsistently once you introduce VPNs, multiple subnets, or anything “not exactly one LAN.”
+
+`home.arpa` is [reserved for residential home networks](https://datatracker.ietf.org/doc/html/rfc8375). It’s boring in the best way: it won’t collide with real domains, and it makes it obvious what’s internal.
+
+On the DNS side, I already run [Pi-hole](https://pi-hole.net) for ad blocking, so I used it as the DNS server too. The important bit is making Pi-hole *authoritative* for `home.arpa`, so it answers locally instead of forwarding those queries upstream.
 
 Two lines do the heavy lifting:
 
@@ -32,19 +43,21 @@ local=/home.arpa/
 address=/home.arpa/192.168.1.100 # Your server's IP
 ```
 
-`local=/…/` tells dnsmasq (the resolver inside Pi-hole) that the zone is local and must not be forwarded upstream. `address=/…/IP` is a wildcard that maps anything under `home.arpa` to your NAS’s LAN IP. 
+`local=/…/` tells dnsmasq (Pi-hole’s resolver) that the zone is local and must not be forwarded upstream. `address=/…/IP` is a wildcard: anything under `home.arpa` maps to your server’s LAN IP.
 
-One Pi-hole gotcha is with v6, by default it doesn’t load `/etc/dnsmasq.d`. Flip the switch in **Settings → All settings → Miscellaneous**: “Load additional dnsmasq configs from `/etc/dnsmasq.d`”. Point your router’s **DHCP DNS** at the Pi-hole IP so everything on the network actually uses it.
+Pi-hole v6 has one gotcha: by default it doesn’t load `/etc/dnsmasq.d`. Flip the switch in **Settings → All settings → Miscellaneous**: “Load additional dnsmasq configs from `/etc/dnsmasq.d`”.
 
-Now at home you can visit `http://app.home.arpa` and you’ll hit your server. We’ll tidy up HTTPS and hostnames next.
+Then make sure your router hands out the Pi-hole IP as the DNS server via DHCP, otherwise none of this matters because clients won’t ask Pi-hole in the first place.
+
+At that point, on my home network, `http://anything.home.arpa` hits my server.
 
 ---
 
 ## Put a front door on everything
 
-If you’re running multiple services on a single host, you have them listening on random ports. That gets old. A reverse proxy lets you stop remembering ports and start using names.
+If you run multiple services on one box, you end up with a bunch of ports. That’s fine for a weekend project, and then it turns into “wait, is Paperless on 8000 or 8010?” A reverse proxy fixes that: you only ever type the hostname, and the proxy routes it to the right place.
 
-I use a Synology NAS which has a built-in reverse proxy, which is just a thin wrapper around `nginx`. Add an entry like:
+I use a Synology NAS, and its built-in reverse proxy is basically a friendly wrapper around `nginx`. Add an entry like:
 
 - **Source:** `app.home.arpa` on 80  
 - **Destination:** `http://127.0.0.1:8000` (or wherever port your app lives)
@@ -63,30 +76,32 @@ The quick path is `mkcert`: install its root once on your devices, then generate
 **Use a real domain you own.**  
 If you have `example.com`, you can issue `*.home.example.com` via a DNS-01 challenge with Let’s Encrypt even if those names don’t resolve publicly. Keep the records split so they only exist to your LAN and your tailnet. The advantage is zero device trust fiddling; the trade-off is owning a domain and wiring the DNS-01 bit once.
 
-Whether you think this level of transport security is needed is your own decision to make. Personally I didn't bother as I'm either accessing these servers on my private network or via a secure Tailscale tunnel, but your use case it might be worth it. If so, I'd probably just buy a real domain so Let's Encrypt can issue certificates.
+I personally didn’t bother with HTTPS for now. If I’m on my LAN, I trust my LAN; if I’m away, I’m inside a Tailscale tunnel. If you want the padlock (or you’re on shared networks a lot), I’d probably go with “real domain I own” so Let’s Encrypt can handle the certs without manual device setup.
 
 ---
 
 ## Make those same names work when you’re away
 
-This is where Tailscale earns its keep. The goal is simple: keep using `app.home.arpa` on public Wi-Fi without opening your house to the internet.
+This is where Tailscale makes the whole thing feel seamless. The goal is: keep using `app.home.arpa` on public Wi‑Fi without punching holes in your router.
 
-Install Tailscale on the NAS and advertise your LAN subnet—say, `192.168.1.0/24`. This allows all your tailnet devices to reach `192.168.1.1` as if they were at home. Then add a split-DNS rule (Tailscale calls these **restricted nameservers**): send queries for `home.arpa` to your Pi-hole IP on the LAN. MagicDNS can stay on; the restricted rule is what steers those names to the right place.
+Install Tailscale on the NAS and advertise your LAN subnet (for example, `192.168.1.0/24`). That lets tailnet devices reach anything on your LAN as if they were at home.
+
+Then add a split-DNS rule (Tailscale calls these **restricted nameservers**): send queries for `home.arpa` to your Pi-hole IP on the LAN. MagicDNS can stay on; the restricted rule is what makes `home.arpa` behave the same everywhere.
 
 From that point on, your laptop or phone does the same thing in both places:
 
-1. Look up `apps.home.arpa`.  
+1. Look up `app.home.arpa`.  
 2. Get `192.168.1.100` from Pi-hole (locally, or via the tailnet).  
 3. Connect over the tailnet if you’re away, directly if you’re home.  
 4. Land at the reverse proxy, which forwards you to the right container.
 
-To your browser it feels indistinguishable from a public website. To the internet at large, your services don’t exist.
+To the browser it feels like a normal website. To the public internet, it’s a black hole.
 
 ---
 
 ## Putting it together
 
-It took me a couple hours to figure this out, but it boils down to a few steps:
+It took me a couple hours of fiddling (and a couple “why is DNS like this?” moments), but it boils down to:
 
 1. Choose a private suffix like `home.arpa`.  
 2. In Pi-hole v6, enable loading `/etc/dnsmasq.d`, then add:
@@ -95,8 +110,10 @@ It took me a couple hours to figure this out, but it boils down to a few steps:
    address=/home.arpa/192.168.1.100 # Your server's IP
    ```
    Restart Pi-hole and make sure your router’s DHCP points clients at it.
-3. Configure the reverse proxy so `bookmarks.home.arpa` routes to your bookmarker, `budget.home.nas` to your budgeting app, and so on. I just used the included reverse proxy with Synology.
+3. Configure the reverse proxy so `bookmarks.home.arpa` routes to your bookmarker, `budget.home.arpa` to your budgeting app, and so on. I used Synology’s built-in reverse proxy.
 4. Install Tailscale on the NAS, advertise the `192.168.1.0/24` route, approve it, and add a restricted nameserver mapping `home.arpa` to the Pi-hole IP. Connect your devices to your tailnet.
 
 ![Tailscale Subnet Routes Screenshot](subnet-routes.png)
 ![Tailscale Nameserver Screenshot](nameserver.png)
+
+Since setting this up I’ve stopped thinking about “am I on my home Wi‑Fi?” I just open `paperless.home.arpa` (or whatever) and move on. It’s a small quality-of-life change, but it makes the whole homelab feel like a real, everyday thing instead of a hobby I only touch when I’m sitting next to the router.
