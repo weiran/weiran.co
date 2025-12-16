@@ -18,24 +18,25 @@ const numPages = Math.ceil(posts.length / postsPerPage)
 
 <BaseLayout description={site.description}>
   <Bio />
-  <hr class="divider divider--xl" />
 
-  {pagePosts.map((post) => (
-    <article class="post-preview">
-      <h2 class:list={['post-title', post.data.passthroughUrl ? 'post-title--link' : null]}>
-        <TitleLink title={post.data.title} passthroughUrl={post.data.passthroughUrl} slug={post.slug} />
-      </h2>
-      <p class:list={['post-meta', post.data.passthroughUrl ? 'post-meta--link' : 'post-meta--list']}>
-        {formatDate(post.data.date)}
-      </p>
-      <div class="post-preview-body">
-        <p class="post-excerpt">{excerpt(post.body)}</p>
-        <p>
-          <a href={`/blog/${post.slug}`}>⌘</a>
+  {pagePosts.map((post, index) => (
+    <>
+      <article class="post-preview">
+        <h2 class:list={['post-title', post.data.passthroughUrl ? 'post-title--link' : null]}>
+          <TitleLink title={post.data.title} passthroughUrl={post.data.passthroughUrl} slug={post.slug} />
+        </h2>
+        <p class:list={['post-meta', post.data.passthroughUrl ? 'post-meta--link' : 'post-meta--list']}>
+          {formatDate(post.data.date)}
         </p>
-        <hr class="divider divider--xl divider--post" />
-      </div>
-    </article>
+        <div class="post-preview-body">
+          <p class="post-excerpt">{excerpt(post.body)}</p>
+          <p>
+            <a href={`/blog/${post.slug}`}>Read →</a>
+          </p>
+        </div>
+      </article>
+      {index < pagePosts.length - 1 ? <hr class="divider divider--xl" /> : null}
+    </>
   ))}
 
   {numPages > 1 ? (

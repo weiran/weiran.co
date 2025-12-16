@@ -40,22 +40,23 @@ const { Content } = await entry.render()
   description={entry.data.description}
   pageType="article"
 >
-  <h1>
-    <TitleLink
-      title={entry.data.title}
-      passthroughUrl={entry.data.passthroughUrl}
-      slug={entry.slug}
-    />
-  </h1>
-  <p class="post-meta post-meta--post">{formatDate(entry.data.date)}</p>
-  <Content />
-  <p>
-    <a href="/">⌘</a>
-  </p>
+  <article>
+    <h1>
+      <TitleLink
+        title={entry.data.title}
+        passthroughUrl={entry.data.passthroughUrl}
+        slug={entry.slug}
+      />
+    </h1>
+    <p class="post-meta post-meta--post">{formatDate(entry.data.date)}</p>
+    {entry.data.description ? <p class="post-intro">{entry.data.description}</p> : null}
+    <Content />
+    <p>
+      <a href="/">⌘ Home</a>
+    </p>
+  </article>
 
-  <hr class="divider divider--lg" />
   <Bio />
-  <hr class="divider divider--lg" />
 
   <ul class="pager pager--posts">
     {previous ? (

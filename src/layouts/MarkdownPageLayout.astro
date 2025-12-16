@@ -7,8 +7,9 @@ const title = frontmatter?.title ?? 'Page'
 ---
 
 <BaseLayout title={title}>
-  <h1>{title}</h1>
-  <slot />
-  <hr class="divider divider--lg" />
+  <article>
+    <h1>{title}</h1>
+    <slot />
+  </article>
   <Bio />
 </BaseLayout>

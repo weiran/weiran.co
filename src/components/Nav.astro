@@ -13,21 +13,3 @@ const pathname = Astro.url.pathname.replace(/\/$/, '') || '/'
     </div>
   ))}
 </nav>
-
-<style>
-  .nav {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 3.75rem;
-  }
-
-  .nav-item {
-    flex: 1 1 auto;
-    margin: 0 2.8125rem;
-  }
-
-  a[aria-current='page'] {
-    text-decoration: underline;
-  }
-</style>
