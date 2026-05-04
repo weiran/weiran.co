@@ -334,6 +334,119 @@
   color: var(--accent);
 }
 
+.contact-page {
+  min-height: clamp(34rem, 67vh, 45rem);
+  padding: clamp(5rem, 11vw, 9.5rem) clamp(1.5rem, 4vw, 4.5rem) 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(18rem, 0.8fr) minmax(22rem, 1fr);
+  gap: clamp(3rem, 9vw, 8rem);
+  align-items: start;
+}
+
+.contact-primary h1 {
+  margin-bottom: 1.4rem;
+  font-size: clamp(3.4rem, 6.3vw, 5.65rem);
+  line-height: 1.03;
+  letter-spacing: 0;
+}
+
+.contact-primary > p:not(.eyebrow) {
+  max-width: 24rem;
+  margin-bottom: clamp(3rem, 7vw, 5rem);
+  font-family: var(--sans);
+  font-size: clamp(1.35rem, 2vw, 1.65rem);
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.contact-email-card,
+.social-link-card {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr) auto;
+  gap: 1.35rem;
+  align-items: center;
+  min-height: 5.8rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--panel);
+  font-family: var(--sans);
+  text-decoration-line: none;
+  transition:
+    border-color 160ms ease,
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+.contact-email-card {
+  max-width: 39rem;
+  padding: 1.35rem 1.8rem;
+  font-size: clamp(1.2rem, 1.9vw, 1.5rem);
+}
+
+.social-link-card {
+  padding: 1.15rem 1.6rem;
+  font-size: 1.25rem;
+}
+
+.contact-email-card > span:last-child,
+.social-link-card > span:last-child {
+  color: var(--accent);
+  font-size: 1.45rem;
+  transition: transform 160ms ease;
+}
+
+.contact-email-card:hover,
+.social-link-card:hover {
+  border-color: rgba(168, 75, 39, 0.35);
+  background: rgba(255, 252, 247, 0.92);
+  transform: translateY(-0.08rem);
+}
+
+.contact-email-card:hover > span:last-child,
+.social-link-card:hover > span:last-child {
+  transform: translateX(0.25rem);
+}
+
+.contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  color: var(--muted);
+}
+
+.contact-icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-icon path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.contact-icon--github path,
+.contact-icon--twitter path {
+  fill: none;
+}
+
+.contact-elsewhere {
+  padding-top: clamp(1.5rem, 4vw, 3.05rem);
+}
+
+.social-link-list {
+  display: grid;
+  gap: 0.7rem;
+}
+
 .projects-page {
   padding: 0.25rem clamp(1.5rem, 4vw, 4.5rem) 0;
 }
@@ -749,6 +862,7 @@
 @media (max-width: 900px) {
   .about-intro,
   .about-section,
+  .contact-grid,
   .featured-project-grid,
   .home-hero,
   .home-grid,
@@ -775,6 +889,18 @@
   .projects-page {
     padding-right: 0;
     padding-left: 0;
+  }
+
+  .contact-page {
+    padding: 3.5rem 0 0;
+  }
+
+  .contact-primary > p:not(.eyebrow) {
+    margin-bottom: 2rem;
+  }
+
+  .contact-elsewhere {
+    padding-top: 0;
   }
 
   .project-callout + .project-callout {
@@ -837,16 +963,26 @@
   }
 
   .project-card,
-  .project-callout {
+  .project-callout,
+  .contact-email-card,
+  .social-link-card {
     padding: 1.25rem;
   }
 
-  .project-callout {
+  .project-callout,
+  .contact-email-card,
+  .social-link-card {
     grid-template-columns: 2.5rem minmax(0, 1fr);
     gap: 1rem;
   }
 
-  .callout-icon {
+  .contact-email-card > span:last-child,
+  .social-link-card > span:last-child {
+    display: none;
+  }
+
+  .callout-icon,
+  .contact-icon {
     width: 2.4rem;
     height: 2.4rem;
   }
