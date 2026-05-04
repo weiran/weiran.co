@@ -1,0 +1,90 @@
+---
+import { Image } from 'astro:assets'
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import profilePic from '../../components/profile-pic.jpeg'
+
+const projects = [
+  {
+    title: 'Hackers',
+    description: 'An open source Hacker News app for iOS',
+    href: '/projects/hackers',
+  },
+  {
+    title: 'Watch It Later',
+    description: 'Save online videos to watch later on your Apple TV',
+    href: '/projects/watch-it-later',
+  },
+  {
+    title: 'Early projects',
+    description: 'A collection of older projects and experiments',
+    href: '/projects',
+  },
+]
+---
+
+<BaseLayout title="About" description="A little bit about Weiran Zhang." wide>
+  <article class="about-page">
+    <header class="about-hero">
+      <p class="eyebrow">About</p>
+      <h1>A little bit about me.</h1>
+    </header>
+
+    <section class="about-intro" aria-label="About Weiran">
+      <div class="about-copy">
+        <p>
+          I’m Weiran, a software engineering leader interested in how
+          technology, product thinking, and good teams shape the way we live and
+          work.
+        </p>
+        <p>
+          I work on modernising mobile apps and the platforms behind them, and I
+          care about making complicated systems feel understandable, dependable,
+          and useful.
+        </p>
+        <p>
+          This space is where I share thoughts on software, side projects,
+          building teams, and the occasional reflection.
+        </p>
+        <p class="about-location">
+          <span aria-hidden="true"></span> Based in the UK
+        </p>
+      </div>
+
+      <figure class="about-portrait">
+        <Image
+          src={profilePic}
+          alt="Weiran Zhang"
+          width={720}
+          height={720}
+          loading="eager"
+          decoding="async"
+        />
+      </figure>
+    </section>
+
+    <section class="about-section about-work" aria-labelledby="work-title">
+      <p id="work-title">Some things I’ve worked on</p>
+      <div class="work-list">
+        {
+          projects.map((project) => (
+            <a href={project.href} class="work-link">
+              <span>
+                <strong>{project.title}</strong>
+                <small>{project.description}</small>
+              </span>
+              <span aria-hidden="true">→</span>
+            </a>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="about-connect" aria-label="Contact links">
+      <p>Let’s connect</p>
+      <a href="https://twitter.com/weiran">Twitter / X</a>
+      <a href="/contact">Email</a>
+      <a href="https://github.com/weiran">GitHub</a>
+      <a href="https://www.linkedin.com/in/weiranz">LinkedIn</a>
+    </section>
+  </article>
+</BaseLayout>
