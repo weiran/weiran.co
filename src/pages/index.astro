@@ -1,7 +1,10 @@
 ---
 import { getCollection } from 'astro:content'
+import { Image } from 'astro:assets'
 import BaseLayout from '../layouts/BaseLayout.astro'
 import TitleLink from '../components/TitleLink.astro'
+import profilePic from '../components/profile-pic.jpeg'
+import hackersPhones from './projects/hackers/_hackers-phones.png'
 import { site } from '../config/site'
 import { excerpt } from '../lib/text'
 
@@ -33,17 +36,36 @@ const summary = (body: string) => {
   <section class="home-hero" aria-labelledby="home-title">
     <div class="home-hero-copy">
       <h1 id="home-title">Weiran Zhang</h1>
-      <p>
-        I write about technology, software engineering, side projects, and
-        building thoughtful products.
-      </p>
-      {
-        featured ? (
-          <a class="text-link text-link--ruled" href={`/blog/${featured.slug}`}>
-            Read the latest post <span aria-hidden="true">→</span>
-          </a>
-        ) : null
-      }
+      <div class="home-intro">
+        <div>
+          <p>
+            I write about technology, software engineering, side projects, and
+            building thoughtful products.
+          </p>
+          {
+            featured ? (
+              <a
+                class="text-link text-link--ruled"
+                href={`/blog/${featured.slug}`}
+              >
+                Read the latest post <span aria-hidden="true">→</span>
+              </a>
+            ) : null
+          }
+        </div>
+        <figure class="portrait-note">
+          <span class="portrait-tape" aria-hidden="true"></span>
+          <Image
+            src={profilePic}
+            alt="Weiran Zhang"
+            width={160}
+            height={160}
+            loading="eager"
+            decoding="async"
+          />
+          <figcaption>That&rsquo;s me.</figcaption>
+        </figure>
+      </div>
     </div>
 
     {
@@ -78,12 +100,18 @@ const summary = (body: string) => {
         {
           latestPosts.map((post) => (
             <li>
-              <a href={post.data.passthroughUrl ?? `/blog/${post.slug}`}>
-                {post.data.title}
+              <a
+                class="latest-link"
+                href={post.data.passthroughUrl ?? `/blog/${post.slug}`}
+              >
+                <span class="latest-link-title">{post.data.title}</span>
+                <time datetime={post.data.date.toISOString()}>
+                  {homeDate(post.data.date)}
+                </time>
+                <span class="latest-link-arrow" aria-hidden="true">
+                  →
+                </span>
               </a>
-              <time datetime={post.data.date.toISOString()}>
-                {homeDate(post.data.date)}
-              </time>
             </li>
           ))
         }
@@ -103,15 +131,33 @@ const summary = (body: string) => {
         Software engineer by day, builder by night. I care about clarity,
         simplicity, and making things that are genuinely useful.
       </p>
+      <a class="text-link text-link--ruled" href="/about">
+        More about me <span aria-hidden="true">→</span>
+      </a>
     </aside>
   </section>
 
   <section class="project-strip" aria-labelledby="project-title">
-    <div>
+    <div class="project-strip-copy">
       <p class="eyebrow">Projects</p>
       <h2 id="project-title">Hackers</h2>
-      <p>A minimalist Hacker News reader with keyboard-first navigation.</p>
+      <p>
+        A clean, fast Hacker News reader built natively for iPhone and iPad.
+      </p>
+      <a class="text-link text-link--ruled" href="/projects/hackers">
+        Explore project <span aria-hidden="true">→</span>
+      </a>
     </div>
+    <figure class="project-app-preview">
+      <Image
+        src={hackersPhones}
+        alt="Hackers on iPhone, showing the story list and threaded comments"
+        width={976}
+        height={720}
+        loading="lazy"
+        decoding="async"
+      />
+    </figure>
     <dl class="project-stats">
       <div>
         <dt>100k+</dt>
@@ -126,8 +172,5 @@ const summary = (body: string) => {
         <dd>GitHub contributors</dd>
       </div>
     </dl>
-    <a class="text-link" href="/projects/hackers"
-      >Explore project <span aria-hidden="true">→</span></a
-    >
   </section>
 </BaseLayout>

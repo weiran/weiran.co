@@ -5,12 +5,12 @@
 @import '@fontsource/vollkorn/700.css';
 
 :root {
-  --bg: #fbf7ef;
-  --panel: rgba(255, 252, 247, 0.72);
-  --text: #1f2325;
-  --muted: #5c6267;
-  --border: rgba(31, 35, 37, 0.14);
-  --accent: #a84b27;
+  --bg: #f6f1e8;
+  --panel: rgba(253, 250, 244, 0.78);
+  --text: #172733;
+  --muted: #52616b;
+  --border: rgba(23, 39, 51, 0.17);
+  --accent: #b84421;
 
   --serif: 'Vollkorn', Georgia, serif;
   --sans:
@@ -27,7 +27,7 @@
   --pad-lg: 2.5rem;
 
   --maxwidth-text: 46rem;
-  --maxwidth-wide: 86rem;
+  --maxwidth-wide: 92rem;
 }
 
 html {
@@ -43,18 +43,18 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background:
+  background-image:
+    radial-gradient(rgba(23, 39, 51, 0.045) 0.55px, transparent 0.7px),
     radial-gradient(
-      circle at 20% 8%,
-      rgba(255, 255, 255, 0.92),
-      transparent 34rem
+      circle at 18% 4%,
+      rgba(255, 255, 255, 0.78),
+      transparent 36rem
     ),
-    radial-gradient(
-      circle at 82% 28%,
-      rgba(235, 210, 178, 0.24),
-      transparent 30rem
-    ),
-    linear-gradient(135deg, #fffaf3 0%, var(--bg) 52%, #f8efe3 100%);
+    linear-gradient(135deg, #faf7f0 0%, var(--bg) 58%, #f4ede3 100%);
+  background-size:
+    5px 5px,
+    auto,
+    auto;
   background-color: var(--bg);
 }
 
@@ -209,11 +209,11 @@ div.footnotes p:last-of-type {
 }
 
 ::selection {
-  background: rgba(168, 75, 39, 0.2);
+  background: rgba(184, 68, 33, 0.2);
 }
 
 *:focus-visible {
-  outline: 2px solid rgba(168, 75, 39, 0.75);
+  outline: 2px solid rgba(184, 68, 33, 0.78);
   outline-offset: 3px;
 }
 

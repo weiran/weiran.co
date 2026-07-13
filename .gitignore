@@ -5,4 +5,5 @@ dist/
 .DS_Store
 .intermediate-representation/
 .cache/
+design/imagegen/
 yarn.lock
