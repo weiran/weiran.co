@@ -1,5 +1,5 @@
 ---
-title: "How I Made My Private Homelab Feel Public with Tailscale and Pi-Hole"
+title: "How I Made My Homelab Work Everywhere"
 date: "2025-10-24T10:00:00.000Z"
 ---
 
