@@ -1014,24 +1014,6 @@
   transform: translateX(-50%) rotate(-2deg);
 }
 
-.portrait-note figcaption {
-  margin: 0.3rem -1rem 0 0;
-  font-family: var(--serif);
-  font-size: 1.05rem;
-  font-style: italic;
-  color: var(--muted);
-  text-align: right;
-  transform: rotate(-5deg);
-}
-
-.portrait-note figcaption::before {
-  content: '↖';
-  display: inline-block;
-  margin-right: 0.35rem;
-  color: var(--accent);
-  transform: rotate(-8deg);
-}
-
 .featured-card {
   position: relative;
   overflow: hidden;
